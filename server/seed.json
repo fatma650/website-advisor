@@ -1,0 +1,1830 @@
+{
+  "projects": [
+    {
+      "id": "deyar",
+      "order": 1,
+      "year": "2024",
+      "heroImage": "/assets/portfolio/deyar/deyar_hero_model.jpg",
+      "boardImage": "/assets/portfolio/deyar/deyar_campaign_board.jpg",
+      "title": {
+        "en": "DEYAR RESIDENCES",
+        "ar": "ديار ريزيدنسز"
+      },
+      "category": {
+        "en": "REAL ESTATE",
+        "ar": "العقارات"
+      },
+      "subtitle": {
+        "en": "High-End Property Investment & Living Experience",
+        "ar": "تجربة سكن واستثمار عقاري راقية"
+      },
+      "client": {
+        "en": "Deyar Developments (ديار)",
+        "ar": "ديار للتطوير العقاري"
+      },
+      "location": {
+        "en": "Sheikh Zayed & 6th of October, Egypt",
+        "ar": "الشيخ زايد والسادس من أكتوبر، مصر"
+      },
+      "summary": {
+        "en": "A premium real estate social media campaign repositioning luxury living and high-yield property investment in West Cairo through editorial storytelling and architectural transparency.",
+        "ar": "حملة عقارية راقية على التواصل الاجتماعي تعيد تقديم السكن الفاخر والاستثمار مرتفع العائد في غرب القاهرة، عبر السرد التحريري والوضوح المعماري."
+      },
+      "challenge": {
+        "en": "Real estate marketing in Egypt has become oversaturated with generic 3D renders, repetitive sales jargon, and uninspired discount offers. Deyar needed to cut through this market fatigue to launch their exclusive 14-unit residential boutique collection and premium rental suites. The key hurdle was reaching discerning, upper-middle-class investors and tenants who value design integrity, location prestige, and realistic financial returns rather than exaggerated promises.",
+        "ar": "أصبح التسويق العقاري في مصر مزدحماً بصور ثلاثية الأبعاد متشابهة ورسائل بيعية متكررة وعروض خصم غير ملهمة. احتاجت ديار لتجاوز هذا التشابه عند إطلاق مجموعتها السكنية الحصرية المكونة من 14 وحدة وأجنحتها الإيجارية الراقية. كان التحدي الوصول إلى مستثمرين ومستأجرين من الشريحة المتوسطة العليا يقدّرون جودة التصميم والموقع والعوائد الواقعية أكثر من الوعود المبالغ فيها."
+      },
+      "approach": {
+        "en": "In line with ADVISOR's core philosophy—\"Strategy before noise\"—we avoided typical hard-selling tactics. Instead, we developed a multi-layered narrative campaign built around three strategic pillars:\n    1. Financial Intelligence: Clear, transparent messaging highlighting up to 13,000 EGP/month rental income and low-friction ownership models.\n    2. Educational Value: Informative carousels addressing critical buyer questions: \"Before you buy... know what you truly own\" and \"5 reasons to consider Deyar\".\n    3. Tactile Architecture: Framing homes as sensory retreats rather than square meters—\"A Space To Stay, A Place To Experience.\"",
+        "ar": "انطلاقاً من فلسفة ADVISOR «الاستراتيجية قبل الضجيج»، ابتعدنا عن البيع المباشر الضاغط وطوّرنا حملة سردية متعددة المستويات حول ثلاث ركائز:\n1. الذكاء المالي: رسائل واضحة وشفافة تبرز دخلاً إيجارياً يصل إلى 13,000 جنيه شهرياً ونماذج تملك ميسّرة.\n2. القيمة التعليمية: منشورات متتابعة تجيب عن أسئلة المشتري الأساسية: «قبل ما تشتري... اعرف إنت بتملك إيه» و«5 أسباب تخليك تفكر في ديار».\n3. التجربة المعمارية: تقديم المنزل كتجربة حسية مريحة وليس مجرد أمتار مربعة — «مساحة للإقامة، ومكان للتجربة»."
+      },
+      "creativeDirection": {
+        "en": "We established an editorial visual identity rooted in warm architectural minimalism. Using sun-drenched natural lighting, deep dramatic cast shadows, and tactile interior materials (warm woods, textured linens, clean bronze hardware), every visual felt calm, premium, and lived-in. Arabic typography was set in bold contemporary weights paired with clean geometric Latin accents, creating instant prestige on mobile feeds.",
+        "ar": "أسسنا هوية بصرية تحريرية ترتكز على بساطة معمارية دافئة. جمعنا ضوء الشمس الطبيعي والظلال العميقة والخامات الملموسة كالخشب الدافئ والكتان والقطع البرونزية، لتبدو الصور هادئة وراقية وحقيقية. استخدمنا خطوطاً عربية معاصرة عريضة مع لمسات لاتينية هندسية واضحة لإبراز الفخامة على شاشات الهاتف."
+      },
+      "services": [
+        {
+          "en": "Social Media Strategy",
+          "ar": "استراتيجية التواصل الاجتماعي"
+        },
+        {
+          "en": "Creative Direction",
+          "ar": "التوجيه الإبداعي"
+        },
+        {
+          "en": "Visual Design",
+          "ar": "التصميم البصري"
+        },
+        {
+          "en": "Arabic & English Copywriting",
+          "ar": "كتابة محتوى بالعربية والإنجليزية"
+        },
+        {
+          "en": "Campaign Art Direction",
+          "ar": "التوجيه الفني للحملة"
+        }
+      ],
+      "results": [
+        {
+          "label": {
+            "en": "Sales Target",
+            "ar": "هدف المبيعات"
+          },
+          "value": {
+            "en": "100% In 45 Days",
+            "ar": "100% خلال 45 يوماً"
+          },
+          "desc": {
+            "en": "All 14 boutique units reserved within initial launch phase.",
+            "ar": "حجز الوحدات الـ14 بالكامل خلال مرحلة الإطلاق الأولى."
+          }
+        },
+        {
+          "label": {
+            "en": "Rental Inquiries",
+            "ar": "استفسارات الإيجار"
+          },
+          "value": {
+            "en": "+380%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Surge in qualified high-budget tenancy applications.",
+            "ar": "ارتفاع طلبات الإيجار المؤهلة من أصحاب الميزانيات المرتفعة."
+          }
+        },
+        {
+          "label": {
+            "en": "Cost Per Lead",
+            "ar": "تكلفة العميل المحتمل"
+          },
+          "value": {
+            "en": "-42%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Significant reduction compared to industry benchmarks through high organic save rates.",
+            "ar": "انخفاض ملحوظ مقارنة بمعايير القطاع بفضل ارتفاع الحفظ العضوي للمحتوى."
+          }
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/portfolio/deyar/deyar_hero_model.jpg",
+          "caption": {
+            "en": "Campaign Master Visual — 'قبل ما تشتري... اعرف إنت بتملك إيه' (Before you buy... know what you own)",
+            "ar": "التصميم الرئيسي للحملة — «قبل ما تشتري... اعرف إنت بتملك إيه»"
+          },
+          "ratio": "4:3"
+        },
+        {
+          "src": "/assets/portfolio/deyar/deyar_bedroom.jpg",
+          "caption": {
+            "en": "Interior Detail — 'الجودة تبدأ من التفاصيل' (Quality begins in the details)",
+            "ar": "تفاصيل التصميم الداخلي — «الجودة تبدأ من التفاصيل»"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/deyar/deyar_keyhole.jpg",
+          "caption": {
+            "en": "Rental Value Proposition — 'مش هتحتاج تدور على مستأجر بنفسك - Rental up to 13,000 EGP/mo'",
+            "ar": "قيمة الإيجار — «مش هتحتاج تدور على مستأجر بنفسك»؛ إيجار يصل إلى 13,000 جنيه شهرياً"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/deyar/deyar_5reasons.jpg",
+          "caption": {
+            "en": "Investor Carousel — '5 أسباب تخليك تفكر في ديار' (5 reasons to consider Deyar)",
+            "ar": "منشورات للمستثمر — «5 أسباب تخليك تفكر في ديار»"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/deyar/deyar_shadow_study.jpg",
+          "caption": {
+            "en": "Atmospheric Visual — 'A Space To Stay, A Place To Experience'",
+            "ar": "مشهد بصري — «مساحة للإقامة، ومكان للتجربة»"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/deyar/deyar_14units.jpg",
+          "caption": {
+            "en": "Scarcity Launch Visual — '14 Units Available - طريقة مختلفة للتملك والاستثمار'",
+            "ar": "تصميم الإطلاق — «14 وحدة متاحة؛ طريقة مختلفة للتملك والاستثمار»"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/deyar/deyar_door_key.jpg",
+          "caption": {
+            "en": "Entry Point Campaign — 'الإستثمار العقاري مش لازم يبدأ بشقة'",
+            "ar": "بداية الاستثمار — «الاستثمار العقاري مش لازم يبدأ بشقة»"
+          },
+          "ratio": "4:5"
+        }
+      ]
+    },
+    {
+      "id": "elbasha",
+      "order": 2,
+      "year": "2024",
+      "heroImage": "/assets/portfolio/elbasha/elbasha_hero_dent.jpg",
+      "boardImage": "/assets/portfolio/elbasha/elbasha_campaign_board.jpg",
+      "title": {
+        "en": "EL BASHA MOTORS",
+        "ar": "الباشا لفحص السيارات"
+      },
+      "category": {
+        "en": "AUTOMOTIVE",
+        "ar": "السيارات"
+      },
+      "subtitle": {
+        "en": "Precision Diagnostic Engineering & Transparency Campaign",
+        "ar": "حملة الدقة الهندسية والشفافية في فحص السيارات"
+      },
+      "client": {
+        "en": "El Basha Car Diagnostic Center (مركز الباشا)",
+        "ar": "مركز الباشا لفحص السيارات"
+      },
+      "location": {
+        "en": "Cairo, Egypt",
+        "ar": "القاهرة، مصر"
+      },
+      "summary": {
+        "en": "Transforming automotive diagnostics in Egypt into a trusted, high-tech experience through the viral campaign '#الخبرة_تحكم' (Experience Governs).",
+        "ar": "تحويل فحص السيارات في مصر إلى تجربة موثوقة ومتطورة عبر حملة «#الخبرة_تحكم»."
+      },
+      "challenge": {
+        "en": "The used car inspection and workshop market in Egypt suffers from pervasive skepticism. Vehicle buyers and owners are frequently worried about undisclosed collision damage, falsified chassis reports, and superficial checks. El Basha Center needed to clearly differentiate itself from ordinary mechanics and establish itself as the definitive scientific authority for vehicle inspection.",
+        "ar": "يعاني سوق فحص السيارات المستعملة والورش في مصر من الشك وعدم الثقة. يقلق المشترون والملاك من أضرار الحوادث غير المعلنة وتقارير الشاسيه غير الدقيقة والفحوص السطحية. احتاج مركز الباشا إلى تمييز نفسه بوضوح عن الورش التقليدية وترسيخ مكانته كمرجع علمي موثوق لفحص السيارات."
+      },
+      "approach": {
+        "en": "Advisor conceptualized the signature brand campaign: '#الخبرة_تحكم' (Experience Governs). We shifted the brand away from greasy garage tropes into a forensic automotive laboratory. Every creative delivered uncompromising clarity:\n    • Macro close-ups exposing subtle structural dents: 'مش كل خبطة تبان' (Not every dent is obvious).\n    • Computerized diagnostics and voltage load tests: 'فحص إلكتروني.. يطمنك على عربيتك'.\n    • Definitive printed certification warranties: 'نتيجة تستند عليها' (A result you can bank on).",
+        "ar": "ابتكرت ADVISOR الحملة المميزة «#الخبرة_تحكم». نقلنا صورة العلامة من الورشة التقليدية إلى مختبر دقيق لفحص السيارات. قدم كل تصميم رسالة واضحة:\n• لقطات مقرّبة تكشف الخبطات الدقيقة في الهيكل: «مش كل خبطة تبان».\n• تشخيص بالحاسب واختبارات أحمال كهربائية: «فحص إلكتروني.. يطمنك على عربيتك».\n• شهادات فحص وضمانات مطبوعة واضحة: «نتيجة تستند عليها»."
+      },
+      "creativeDirection": {
+        "en": "A high-impact, technical color palette anchored by electric cobalt blue (#0052FF), clean stark white, and deep obsidian black. We utilized bold angular speed diagonals, precision millimeter measurement callouts, and tactile macro vehicle photography to establish institutional authority.",
+        "ar": "لوحة ألوان تقنية قوية يقودها الأزرق الكهربائي (#0052FF) والأبيض النقي والأسود العميق. استخدمنا خطوطاً قطرية حادة توحي بالسرعة وقياسات دقيقة بالمليمتر وتصويراً مقرّباً لخامات السيارات لبناء حضور مؤسسي موثوق."
+      },
+      "services": [
+        {
+          "en": "Brand Positioning",
+          "ar": "تحديد مكانة العلامة"
+        },
+        {
+          "en": "Social Media Campaign",
+          "ar": "حملة تواصل اجتماعي"
+        },
+        {
+          "en": "Art Direction",
+          "ar": "التوجيه الفني"
+        },
+        {
+          "en": "Creative Copywriting",
+          "ar": "الكتابة الإبداعية"
+        },
+        {
+          "en": "Digital Advertising",
+          "ar": "الإعلانات الرقمية"
+        }
+      ],
+      "results": [
+        {
+          "label": {
+            "en": "Diagnostic Bookings",
+            "ar": "حجوزات الفحص"
+          },
+          "value": {
+            "en": "+240%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Massive increase in pre-purchase vehicle examination bookings.",
+            "ar": "زيادة كبيرة في حجوزات فحص السيارات قبل الشراء."
+          }
+        },
+        {
+          "label": {
+            "en": "Campaign Impressions",
+            "ar": "مرات ظهور الحملة"
+          },
+          "value": {
+            "en": "1.2M+",
+            "ar": "أكثر من 1.2 مليون"
+          },
+          "desc": {
+            "en": "Targeted reach across car enthusiast groups and prospective buyers.",
+            "ar": "وصول مستهدف إلى مجموعات محبي السيارات والمشترين المحتملين."
+          }
+        },
+        {
+          "label": {
+            "en": "Brand Trust Index",
+            "ar": "مؤشر الثقة بالعلامة"
+          },
+          "value": {
+            "en": "98%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Rated top recommended inspection center across Cairo automotive forums.",
+            "ar": "تقييمه ضمن أكثر مراكز الفحص توصية في منتديات السيارات بالقاهرة."
+          }
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/portfolio/elbasha/elbasha_hero_dent.jpg",
+          "caption": {
+            "en": "Hero Campaign Visual — 'مش كل خبطة تبان - #الخبرة_تحكم' (Not every dent is obvious - Experience Governs)",
+            "ar": "التصميم الرئيسي — «مش كل خبطة تبان — #الخبرة_تحكم»"
+          },
+          "ratio": "4:3"
+        },
+        {
+          "src": "/assets/portfolio/elbasha/elbasha_keys_handover.jpg",
+          "caption": {
+            "en": "Handover Assurance — 'الخبرة بتفرق' (Experience makes the difference)",
+            "ar": "الثقة عند التسليم — «الخبرة بتفرق»"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/elbasha/elbasha_battery_diagnostics.jpg",
+          "caption": {
+            "en": "High-Tech Diagnostics — 'فحص إلكتروني.. يطمنك على عربيتك'",
+            "ar": "تشخيص متطور — «فحص إلكتروني.. يطمنك على عربيتك»"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/elbasha/elbasha_medal_keys.jpg",
+          "caption": {
+            "en": "Quality Benchmark — 'ليه تختار مركز الباشا' (Why choose El Basha Center)",
+            "ar": "معيار الجودة — «ليه تختار مركز الباشا»"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/elbasha/elbasha_blue_suv.jpg",
+          "caption": {
+            "en": "Certified Inspection Tape — 'نتيجة تستند عليها'",
+            "ar": "شريط الفحص المعتمد — «نتيجة تستند عليها»"
+          },
+          "ratio": "4:5"
+        },
+        {
+          "src": "/assets/portfolio/elbasha/elbasha_inspection_checkmark.jpg",
+          "caption": {
+            "en": "Digital Seal of Approval — The comprehensive certified diagnostic inspection checklist",
+            "ar": "اعتماد رقمي — قائمة الفحص التشخيصي الشامل المعتمد"
+          },
+          "ratio": "4:5"
+        }
+      ]
+    },
+    {
+      "id": "farida",
+      "order": 3,
+      "year": "2024",
+      "heroImage": "/assets/portfolio/farida/farida_hero_texture.jpg",
+      "boardImage": "/assets/portfolio/farida/farida_campaign_board.jpg",
+      "title": {
+        "en": "FARIDA HAUTE COUTURE",
+        "ar": "فريدة للأزياء الراقية"
+      },
+      "category": {
+        "en": "FASHION",
+        "ar": "الأزياء"
+      },
+      "subtitle": {
+        "en": "Tactile Luxury & Modern Feminine Sophistication",
+        "ar": "فخامة الخامات وأناقة أنثوية عصرية"
+      },
+      "client": {
+        "en": "Farida Women's Fashion (أزياء فريدة)",
+        "ar": "أزياء فريدة النسائية"
+      },
+      "location": {
+        "en": "Cairo & Alexandria, Egypt",
+        "ar": "القاهرة والإسكندرية، مصر"
+      },
+      "summary": {
+        "en": "Elevating contemporary women's fashion through editorial craftsmanship, fabric-first visual storytelling, and high-fashion aesthetics under the banner 'Feel The Elegance'.",
+        "ar": "الارتقاء بالأزياء النسائية المعاصرة عبر الحرفية التحريرية وسرد بصري يبدأ بالخامة وجماليات الموضة الراقية تحت شعار «اشعري بالأناقة»."
+      },
+      "challenge": {
+        "en": "The women's ready-to-wear landscape in the Middle East is heavily crowded with fast-fashion copies and low-cost mass production. Farida needed to showcase the premium tailoring, rich fabric blends, and thoughtful silhouette design of their apparel to justify a higher price point and build lasting brand loyalty among stylish, discerning women.",
+        "ar": "سوق الملابس النسائية الجاهزة في الشرق الأوسط مزدحم بنسخ الموضة السريعة والإنتاج منخفض التكلفة. احتاجت فريدة لإظهار جودة التفصيل وغنى الأقمشة ودقة تصميم القصّات لتبرير سعر أعلى وبناء ولاء مستمر لدى النساء اللاتي يقدّرن الأناقة والجودة."
+      },
+      "approach": {
+        "en": "Advisor crafted a high-fashion campaign built on sensory tactile connection: 'Feel The Elegance'. Rather than standard catalogue shots, we placed rich textile intimacy front and center. We highlighted:\n    • Heavy macro weaves of deep wine-red jacquard fabric against crisp selvedge denim.\n    • Clean, architectural silhouettes that flatter diverse body types effortlessly.\n    • Curated day-to-evening collections: breezy smocked dresses, pleated midi skirts, and tailored matching sets.",
+        "ar": "صممت ADVISOR حملة أزياء راقية ترتكز على التواصل الحسي مع الخامة: «اشعري بالأناقة». بدلاً من صور الكتالوج التقليدية، جعلنا تفاصيل النسيج في المقدمة، وأبرزنا:\n• لقطات مقرّبة لنسيج جاكار خمري كثيف بجانب دنيم واضح التفاصيل.\n• قصّات معمارية نظيفة تناسب أشكال أجسام متنوعة بسهولة.\n• مجموعات منسقة من النهار إلى المساء: فساتين خفيفة بتفاصيل مطاطية، وتنانير ميدي بكسرات، وأطقم متناسقة بتفصيل متقن."
+      },
+      "creativeDirection": {
+        "en": "Inspired by European fashion publishing (Vogue, Harper's Bazaar), we utilized generous whitespace, oversized elegant serif lettering ('Farida'), minimalist neutral backdrops, and natural fabric texture details. Every post feels like an editorial tear-sheet from a luxury magazine.",
+        "ar": "استلهمنا أسلوب مجلات الموضة الأوروبية مثل Vogue وHarper’s Bazaar، واستخدمنا مساحات واسعة وخطوطاً كبيرة أنيقة لاسم «Farida» وخلفيات محايدة بسيطة وتفاصيل طبيعية للأقمشة. يبدو كل منشور كصفحة تحريرية من مجلة فاخرة."
+      },
+      "services": [
+        {
+          "en": "Editorial Art Direction",
+          "ar": "التوجيه الفني التحريري"
+        },
+        {
+          "en": "Fashion Lookbook Design",
+          "ar": "تصميم دليل الأزياء"
+        },
+        {
+          "en": "Social Media Aesthetic",
+          "ar": "الهوية البصرية للتواصل الاجتماعي"
+        },
+        {
+          "en": "Content Strategy",
+          "ar": "استراتيجية المحتوى"
+        },
+        {
+          "en": "Typography Guidelines",
+          "ar": "دليل الخطوط"
+        }
+      ],
+      "results": [
+        {
+          "label": {
+            "en": "Collection Sellout",
+            "ar": "نفاد المجموعة"
+          },
+          "value": {
+            "en": "100% In 3 Weeks",
+            "ar": "100% خلال 3 أسابيع"
+          },
+          "desc": {
+            "en": "Hero pieces sold out completely during the first drop.",
+            "ar": "نفدت القطع الرئيسية بالكامل في الطرح الأول."
+          }
+        },
+        {
+          "label": {
+            "en": "Instagram Saves",
+            "ar": "مرات الحفظ على إنستجرام"
+          },
+          "value": {
+            "en": "4.2x",
+            "ar": "4.2 أضعاف"
+          },
+          "desc": {
+            "en": "Exponential increase in audience collection bookmarks and style shares.",
+            "ar": "ارتفاع كبير في حفظ الجمهور للمجموعات ومشاركة التنسيقات."
+          }
+        },
+        {
+          "label": {
+            "en": "Brand Equity",
+            "ar": "قيمة العلامة"
+          },
+          "value": {
+            "en": "+180%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Elevated perceived brand tier into accessible luxury.",
+            "ar": "الارتقاء بالصورة الذهنية للعلامة إلى فئة الفخامة المتاحة."
+          }
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/portfolio/farida/farida_hero_texture.jpg",
+          "caption": {
+            "en": "Sensory Texture Macro — 'Feel The Elegance - High quality material'",
+            "ar": "تفاصيل الخامة — «اشعري بالأناقة — خامات عالية الجودة»"
+          },
+          "ratio": "4:3"
+        },
+        {
+          "src": "/assets/portfolio/farida/farida_white_dress.jpg",
+          "caption": {
+            "en": "Minimalist Studio Silhouette — The Smocked Linen Summer Dress",
+            "ar": "قصّة باستوديو بسيط — فستان صيفي من الكتان بتفاصيل مطاطية"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/farida/farida_skirts_lineup.jpg",
+          "caption": {
+            "en": "Pattern & Silhouette Study — Farida Curated Summer Midi Skirts Lineup",
+            "ar": "دراسة النقوش والقصّات — تشكيلة تنانير ميدي صيفية من فريدة"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/farida/farida_dark_trousers.jpg",
+          "caption": {
+            "en": "Tailoring Excellence — High-Waist Relaxed Trouser Cut",
+            "ar": "تميز التفصيل — بنطال مريح بخصر مرتفع"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/farida/farida_pink_suit.jpg",
+          "caption": {
+            "en": "Lounge Sophistication — Pastel Blush Two-Piece Ensemble",
+            "ar": "أناقة الاسترخاء — طقم من قطعتين بالوردي الهادئ"
+          },
+          "ratio": "1:1"
+        }
+      ]
+    },
+    {
+      "id": "hadaya",
+      "order": 4,
+      "year": "2024",
+      "heroImage": "/assets/portfolio/hadaya/hadaya_hero_hamper.png",
+      "boardImage": "/assets/portfolio/hadaya/hadaya_campaign_board.jpg",
+      "title": {
+        "en": "HADAYA BEDAYA",
+        "ar": "هدايا بداية"
+      },
+      "category": {
+        "en": "GIFTS & LIFESTYLE",
+        "ar": "الهدايا وأسلوب الحياة"
+      },
+      "subtitle": {
+        "en": "Sacred Milestones & Bespoke Ceremonial Keepsakes",
+        "ar": "ذكريات المناسبات المباركة وهدايا مصممة خصيصاً"
+      },
+      "client": {
+        "en": "Hadaya Bedaya Gifts (هدايا بداية)",
+        "ar": "هدايا بداية"
+      },
+      "location": {
+        "en": "Egypt & Saudi Arabia",
+        "ar": "مصر والمملكة العربية السعودية"
+      },
+      "summary": {
+        "en": "Reimagining Hajj, Umrah, and life-milestone gifting through bespoke artisanal presentation and emotionally resonant visual storytelling.",
+        "ar": "إعادة تقديم هدايا الحج والعمرة ومناسبات الحياة من خلال تنسيق حرفي مخصص وسرد بصري مؤثر عاطفياً."
+      },
+      "challenge": {
+        "en": "Spiritual keepsakes and event giveaways (Hajj, Umrah, newborn celebrations, graduations) in the Arab region are often packaged cheaply in generic plastic. Hadaya Bedaya wanted to offer elevated, bespoke gift hampers that honor the sacred and celebratory weight of life's most precious occasions.",
+        "ar": "كثيراً ما تُقدم تذكارات الحج والعمرة وتوزيعات المواليد والتخرج في المنطقة العربية بتغليف بلاستيكي تقليدي منخفض الجودة. أرادت هدايا بداية تقديم سلال هدايا راقية ومخصصة تليق بقيمة المناسبات المباركة والاحتفالات الثمينة في الحياة."
+      },
+      "approach": {
+        "en": "Advisor transformed the brand's social presence into a gallery of celebration and reverence:\n    • 'مش مجرد هدية... دي ذكرى بتفضل' (Not just a gift... it's a memory that lasts).\n    • Showcasing velvet Quran cases, pearl prayer beads, and personalized fragrance bottles in bespoke wooden and woven presentation baskets.\n    • Launching dedicated seasonal collections for Graduation ('كل مناسبة لها توزيعة تليق بيها') and Newborn Milestones ('تفاصيل صغيرة... بتكمل فرحة كبيرة').",
+        "ar": "حوّلت ADVISOR حضور العلامة على التواصل الاجتماعي إلى معرض للاحتفال والتقدير:\n• «مش مجرد هدية... دي ذكرى بتفضل».\n• عرض حافظات مصاحف مخملية وسبح لؤلؤية وزجاجات عطر مخصصة في سلال تقديم خشبية ومنسوجة.\n• إطلاق مجموعات موسمية للتخرج: «كل مناسبة لها توزيعة تليق بيها»، وللمواليد: «تفاصيل صغيرة... بتكمل فرحة كبيرة»."
+      },
+      "creativeDirection": {
+        "en": "Warm, natural, and reverent. We paired organic woven textures, delicate dried eucalyptus and baby's-breath florals, warm ambient lighting, and bespoke Arabic calligraphy to evoke feelings of warmth, gratitude, and blessed remembrance.",
+        "ar": "أسلوب دافئ وطبيعي يعكس التقدير. جمعنا الخامات المنسوجة الطبيعية وأغصان الأوكالبتوس المجففة وزهور الجيبسوفيلا الرقيقة والإضاءة الدافئة والخط العربي المخصص، لنستحضر مشاعر الامتنان ودفء الذكرى المباركة."
+      },
+      "services": [
+        {
+          "en": "Product Art Direction",
+          "ar": "التوجيه الفني للمنتجات"
+        },
+        {
+          "en": "Seasonal Campaigns",
+          "ar": "حملات موسمية"
+        },
+        {
+          "en": "Packaging Design Direction",
+          "ar": "توجيه تصميم التغليف"
+        },
+        {
+          "en": "Social Media Strategy",
+          "ar": "استراتيجية التواصل الاجتماعي"
+        },
+        {
+          "en": "Emotional Copywriting",
+          "ar": "كتابة محتوى عاطفي"
+        }
+      ],
+      "results": [
+        {
+          "label": {
+            "en": "Pilgrimage Season Orders",
+            "ar": "طلبات موسم الحج والعمرة"
+          },
+          "value": {
+            "en": "+310%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Highest seasonal turnover in company history for Hajj & Umrah sets.",
+            "ar": "أعلى مبيعات موسمية في تاريخ الشركة لمجموعات الحج والعمرة."
+          }
+        },
+        {
+          "label": {
+            "en": "Repeat Customers",
+            "ar": "العملاء العائدون"
+          },
+          "value": {
+            "en": "64%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "High customer loyalty driven by packaging delight.",
+            "ar": "ولاء مرتفع للعملاء تدعمه تجربة التغليف المميزة."
+          }
+        },
+        {
+          "label": {
+            "en": "Regional Reach",
+            "ar": "الانتشار الإقليمي"
+          },
+          "value": {
+            "en": "KSA & UAE",
+            "ar": "السعودية والإمارات"
+          },
+          "desc": {
+            "en": "Expanded shipping footprint to Gulf markets.",
+            "ar": "توسيع نطاق الشحن إلى أسواق الخليج."
+          }
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/portfolio/hadaya/hadaya_hero_hamper.png",
+          "caption": {
+            "en": "Hero Gift Hamper — 'يومهم المميز... يستاهل هدية مميزة' (Their special day deserves a special gift)",
+            "ar": "سلة الهدايا الرئيسية — «يومهم المميز... يستاهل هدية مميزة»"
+          },
+          "ratio": "4:3"
+        },
+        {
+          "src": "/assets/portfolio/hadaya/hadaya_graduation_favors.png",
+          "caption": {
+            "en": "Graduation Keepsakes — 'كل مناسبة لها توزيعة تليق بيها' (Every occasion deserves a worthy giveaway)",
+            "ar": "تذكارات التخرج — «كل مناسبة لها توزيعة تليق بيها»"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/hadaya/hadaya_baby_gifts.png",
+          "caption": {
+            "en": "Newborn Celebrations — 'تفاصيل صغيرة... بتكمل فرحة كبيرة' (Small details complete great joy)",
+            "ar": "احتفالات المواليد — «تفاصيل صغيرة... بتكمل فرحة كبيرة»"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/hadaya/hadaya_hajj_quran.png",
+          "caption": {
+            "en": "Hajj & Umrah Heritage Set — 'مش مجرد هدية... دي ذكرى بتفضل' (A memory that remains)",
+            "ar": "مجموعة الحج والعمرة — «مش مجرد هدية... دي ذكرى بتفضل»"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/hadaya/hadaya_umrah_bags.png",
+          "caption": {
+            "en": "Sacred Souvenirs — 'هدية بسيطة لمناسبة سعيدة' (Bespoke gift boxes for blessed returns)",
+            "ar": "تذكارات مباركة — «هدية بسيطة لمناسبة سعيدة»"
+          },
+          "ratio": "1:1"
+        }
+      ]
+    },
+    {
+      "id": "superlab",
+      "order": 5,
+      "year": "2024",
+      "heroImage": "/assets/portfolio/superlab/superlab_hero_scale.png",
+      "boardImage": "/assets/portfolio/superlab/superlab_campaign_board.jpg",
+      "title": {
+        "en": "SUPER LAB DIAGNOSTICS",
+        "ar": "معامل سوبر لاب"
+      },
+      "category": {
+        "en": "MEDICAL & HEALTHCARE",
+        "ar": "الطب والرعاية الصحية"
+      },
+      "subtitle": {
+        "en": "Empathetic Healthcare Communication & Medical Insight",
+        "ar": "تواصل صحي إنساني ووعي طبي واضح"
+      },
+      "client": {
+        "en": "Super Lab Clinical Laboratories (معامل سوبر للتحاليل الطبية)",
+        "ar": "معامل سوبر للتحاليل الطبية"
+      },
+      "location": {
+        "en": "Greater Cairo, Egypt",
+        "ar": "القاهرة الكبرى، مصر"
+      },
+      "summary": {
+        "en": "Humanizing clinical diagnostic testing through warm, relatable lifestyle storytelling, accessible scientific clarity, and empowering patient awareness.",
+        "ar": "إضفاء طابع إنساني على التحاليل الطبية عبر قصص حياتية دافئة ووضوح علمي مبسّط ووعي يمنح المريض قدرة أكبر على الاهتمام بصحته."
+      },
+      "challenge": {
+        "en": "Medical laboratories frequently intimidate patients with cold clinical terminology, scary disease warnings, or unapproachable diagnostic menus. Super Lab wanted to bridge the gap between complex clinical science and daily human health, motivating people to take proactive care of their bodies without anxiety.",
+        "ar": "قد تُشعر المعامل الطبية المرضى بالرهبة بسبب المصطلحات الجافة والتحذيرات المخيفة من الأمراض أو قوائم الفحوص المعقدة. أرادت سوبر لاب سد الفجوة بين العلوم الطبية المعقدة والصحة اليومية، وتشجيع الناس على العناية الاستباقية بأجسامهم دون قلق."
+      },
+      "approach": {
+        "en": "Advisor transformed clinical testing from an anxious duty into a journey of self-care and empowerment under the motto: 'دقة النتائج.. رحلة مش خطوة' (Diagnostic accuracy is a journey, not just a step). We targeted real-life patient struggles:\n    • The metabolic plateau: 'وزنك ثابت مهما حاولتي؟' (Is your weight stuck no matter how hard you try?).\n    • Differentiating symptoms: 'عندنا أنيميا ولا نقص حديد بس؟' (Do we have anemia or just iron deficiency?).\n    • Age-specific wellness: Preventive blood screenings for people in their 30s.\n    • Pre-marriage readiness: Emotional reassurance before starting a family.",
+        "ar": "حوّلت ADVISOR التحاليل من واجب مثير للقلق إلى رحلة للعناية بالنفس تحت شعار «دقة النتائج.. رحلة مش خطوة». تناولنا تحديات واقعية للمرضى:\n• ثبات الوزن: «وزنك ثابت مهما حاولتي؟».\n• التمييز بين الأعراض: «عندنا أنيميا ولا نقص حديد بس؟».\n• الصحة حسب العمر: فحوص دم وقائية لمن هم في الثلاثينيات.\n• الاستعداد للزواج: الطمأنينة قبل تكوين أسرة."
+      },
+      "creativeDirection": {
+        "en": "Warm, uplifting, and human-centric. Soft warm-toned photography, reassuring physician consultations, 3D medical illustrations (red blood cells and clinical glass test tubes) rendered with gold and soft white light rather than sterile hospital blue.",
+        "ar": "أسلوب دافئ وإيجابي يتمحور حول الإنسان. استخدمنا صوراً بألوان دافئة واستشارات طبية مطمئنة ورسومات طبية ثلاثية الأبعاد لخلايا الدم الحمراء وأنابيب التحاليل الزجاجية، بإضاءة ذهبية وبيضاء ناعمة بدلاً من الأزرق الطبي البارد."
+      },
+      "services": [
+        {
+          "en": "Healthcare Marketing Strategy",
+          "ar": "استراتيجية التسويق الصحي"
+        },
+        {
+          "en": "Medical Copywriting",
+          "ar": "كتابة المحتوى الطبي"
+        },
+        {
+          "en": "Campaign Art Direction",
+          "ar": "التوجيه الفني للحملة"
+        },
+        {
+          "en": "Patient Journey Mapping",
+          "ar": "تخطيط رحلة المريض"
+        },
+        {
+          "en": "Community Awareness",
+          "ar": "التوعية المجتمعية"
+        }
+      ],
+      "results": [
+        {
+          "label": {
+            "en": "Screening Bookings",
+            "ar": "حجوزات الفحوص"
+          },
+          "value": {
+            "en": "+320%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Surge in comprehensive wellness and metabolic testing appointments.",
+            "ar": "ارتفاع مواعيد فحوص الصحة الشاملة والتمثيل الغذائي."
+          }
+        },
+        {
+          "label": {
+            "en": "Community Engagement",
+            "ar": "تفاعل المجتمع"
+          },
+          "value": {
+            "en": "45K+",
+            "ar": "أكثر من 45 ألفاً"
+          },
+          "desc": {
+            "en": "Organic shares and questions answered in comments.",
+            "ar": "مشاركات عضوية وأسئلة تمت الإجابة عنها في التعليقات."
+          }
+        },
+        {
+          "label": {
+            "en": "Patient Retention",
+            "ar": "استمرار المرضى"
+          },
+          "value": {
+            "en": "78%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Patients opting for periodic annual health monitoring.",
+            "ar": "مرضى اختاروا المتابعة الصحية السنوية الدورية."
+          }
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/portfolio/superlab/superlab_hero_scale.png",
+          "caption": {
+            "en": "Metabolic Awareness Hero — 'وزنك ثابت مهما حاولتي؟' (Is your weight stuck no matter what you try?)",
+            "ar": "التوعية بثبات الوزن — «وزنك ثابت مهما حاولتي؟»"
+          },
+          "ratio": "4:3"
+        },
+        {
+          "src": "/assets/portfolio/superlab/superlab_blood_cells.png",
+          "caption": {
+            "en": "Hematology Insight — 'عندنا أنيميا ولا نقص حديد بس؟' (Anemia vs. Iron Deficiency)",
+            "ar": "توعية بالدم — «عندنا أنيميا ولا نقص حديد بس؟»"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/superlab/superlab_test_tube.png",
+          "caption": {
+            "en": "Scientific Precision — 'دقة النتائج.. رحلة مش خطوة' (Accuracy is a journey)",
+            "ar": "الدقة العلمية — «دقة النتائج.. رحلة مش خطوة»"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/superlab/superlab_clinic_consultation.png",
+          "caption": {
+            "en": "Preventative Screening — 'لو إنت في الـ 30... اعرف إيه المناسب لجسمك'",
+            "ar": "الفحص الوقائي — «لو إنت في الـ30... اعرف إيه المناسب لجسمك»"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/portfolio/superlab/superlab_premarriage.jpg",
+          "caption": {
+            "en": "Pre-Marital Screenings — 'قبل الفرح.. ماتنساش أهم خطوة'",
+            "ar": "فحوص ما قبل الزواج — «قبل الفرح.. ماتنساش أهم خطوة»"
+          },
+          "ratio": "1:1"
+        }
+      ]
+    },
+    {
+      "id": "logofolio",
+      "order": 6,
+      "year": "2023 - 2024",
+      "heroImage": "/assets/clients/clients_grid_all.jpg",
+      "boardImage": "/assets/clients/clients_grid_all.jpg",
+      "title": {
+        "en": "IDENTITY SYSTEMS & LOGOFOLIO",
+        "ar": "أنظمة الهوية ومعرض الشعارات"
+      },
+      "category": {
+        "en": "BRANDING",
+        "ar": "الهوية التجارية"
+      },
+      "subtitle": {
+        "en": "Timeless Visual Monograms & Strategic Brand Marks",
+        "ar": "شعارات حرفية ورموز استراتيجية تدوم"
+      },
+      "client": {
+        "en": "Multi-Industry Brand Portfolio (15 Identity Systems)",
+        "ar": "مجموعة علامات في قطاعات متنوعة — 15 نظام هوية"
+      },
+      "location": {
+        "en": "Egypt & GCC Region",
+        "ar": "مصر ودول مجلس التعاون الخليجي"
+      },
+      "summary": {
+        "en": "A curated collection of 15 authentic brand marks and visual identities designed by ADVISOR for leaders in automotive, agriculture, finance, tech, and creative industries.",
+        "ar": "مجموعة مختارة من 15 شعاراً وهوية بصرية أصلية صممتها ADVISOR لعلامات في السيارات والزراعة والتمويل والتقنية والصناعات الإبداعية."
+      },
+      "challenge": {
+        "en": "Creating distinctive identity marks that maintain visual authority, immediate memorability, and scalability across diverse media—from massive neon architectural facades and vehicle liveries to tiny 16-pixel mobile favicons. Each mark needed to capture the strategic essence of its brand without relying on generic iconography.",
+        "ar": "إنشاء شعارات مميزة تحافظ على قوة حضورها وسهولة تذكرها وقابليتها للتدرج عبر وسائط متنوعة: من واجهات النيون الكبيرة وتصميمات المركبات إلى أيقونات هاتف بحجم 16 بكسلاً. كان على كل شعار التعبير عن جوهر العلامة الاستراتيجي دون الاعتماد على رموز عامة."
+      },
+      "approach": {
+        "en": "Advisor applies mathematical geometric rigor, bespoke Arabic calligraphic ligatures, and pure reductive modernism to every identity project:\n    • Automotive (El Basha): Speed aerodynamic flow and sharp precision.\n    • Technology & Control (Infinit Control): Modular cybernetics, infinite loops, and data nodes.\n    • Agriculture (Bloomex): Water droplet symbiosis and blooming growth.\n    • Accounting & Tax (Al Mostashar): Shield of security and fiscal governance.\n    • Real Estate & Contracting (Al Howaida, Abu Zeida): Structural skyline geometry and construction cranes.\n    • Creative Studio (Visual Founder): Minimalist circular framing and avant-garde letterforms.",
+        "ar": "تطبق ADVISOR الدقة الهندسية والروابط الخطية العربية المخصصة والتبسيط المعاصر في كل مشروع هوية:\n• السيارات — الباشا: انسيابية السرعة والدقة الحادة.\n• التقنية والتحكم — Infinit Control: وحدات تقنية وحلقات لانهائية وعقد بيانات.\n• الزراعة — Bloomex: تكامل قطرة الماء والنمو المزدهر.\n• المحاسبة والضرائب — المستشار: درع الأمان والحوكمة المالية.\n• العقارات والمقاولات — الحويدة وأبو زيدة: هندسة المباني ورافعات البناء.\n• الاستوديو الإبداعي — Visual Founder: إطار دائري بسيط وحروف مبتكرة."
+      },
+      "creativeDirection": {
+        "en": "Pure vector minimalism. Strict black-and-white contrast testing to ensure indelible recognizability before any color palette is applied. High optical balance and balanced bilingual legibility across Arabic and Latin script.",
+        "ar": "بساطة متجهة نقية. اختبارات تباين صارمة بالأبيض والأسود لضمان وضوح الشعار قبل إضافة الألوان. توازن بصري دقيق ووضوح متكافئ للخطين العربي واللاتيني."
+      },
+      "services": [
+        {
+          "en": "Brand Architecture",
+          "ar": "بنية العلامة التجارية"
+        },
+        {
+          "en": "Monogram & Symbol Craft",
+          "ar": "تصميم الرموز والشعارات الحرفية"
+        },
+        {
+          "en": "Bilingual Typography Systems",
+          "ar": "أنظمة خطوط ثنائية اللغة"
+        },
+        {
+          "en": "Visual Identity Guidelines",
+          "ar": "دليل الهوية البصرية"
+        },
+        {
+          "en": "Vector Geometry & Grids",
+          "ar": "الهندسة والشبكات المتجهة"
+        }
+      ],
+      "results": [
+        {
+          "label": {
+            "en": "Trademarks Registered",
+            "ar": "العلامات المسجلة"
+          },
+          "value": {
+            "en": "15 Marks",
+            "ar": "15 علامة"
+          },
+          "desc": {
+            "en": "All identities successfully registered across national and regional IP registries.",
+            "ar": "تسجيل جميع الهويات بنجاح في سجلات الملكية الفكرية الوطنية والإقليمية."
+          }
+        },
+        {
+          "label": {
+            "en": "Cross-Platform Scalability",
+            "ar": "التدرج عبر المنصات"
+          },
+          "value": {
+            "en": "100%",
+            "ar": ""
+          },
+          "desc": {
+            "en": "Zero distortion tested from 16px to 20-meter billboard scales.",
+            "ar": "اختبار دون تشوه من حجم 16 بكسلاً إلى لوحات بطول 20 متراً."
+          }
+        },
+        {
+          "label": {
+            "en": "Client Longevity",
+            "ar": "استمرارية العملاء"
+          },
+          "value": {
+            "en": "5+ Years",
+            "ar": "أكثر من 5 سنوات"
+          },
+          "desc": {
+            "en": "Timeless identities that outlive temporary design trends.",
+            "ar": "هويات تدوم وتتجاوز اتجاهات التصميم المؤقتة."
+          }
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/clients/01_elbasha_motors.png",
+          "caption": {
+            "en": "01. El Basha Automotive — Aerodynamic speed silhouette and precision",
+            "ar": "01. الباشا للسيارات — انسيابية السرعة والدقة"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/02_rzo_global.png",
+          "caption": {
+            "en": "02. RZO Global — Monolithic architectural block monogram",
+            "ar": "02. RZO Global — شعار حرفي بكتل معمارية"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/03_r_global.png",
+          "caption": {
+            "en": "03. R Global — Circular orbital kinetic mark",
+            "ar": "03. R Global — رمز حركي بمدار دائري"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/04_infinit_control_shield.png",
+          "caption": {
+            "en": "04. Infinit Control Shield — Cyber-defense and network governance",
+            "ar": "04. Infinit Control Shield — الدفاع الرقمي وحوكمة الشبكات"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/05_infinit_control_loop.png",
+          "caption": {
+            "en": "05. Infinit Control Infinity — Continuous automated data loop",
+            "ar": "05. Infinit Control Infinity — حلقة بيانات آلية متصلة"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/06_r_athlete.png",
+          "caption": {
+            "en": "06. R Athlete — Dynamic runner in motion silhouette",
+            "ar": "06. R Athlete — هيئة عدّاء ديناميكية"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/07_r_turbo.png",
+          "caption": {
+            "en": "07. R Speed — Turbo acoustic frequency velocity mark",
+            "ar": "07. R Speed — رمز سرعة بترددات صوتية"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/08_bloomex_agri.png",
+          "caption": {
+            "en": "08. Bloomex Agriculture — Water droplet ripple & sustainable harvest",
+            "ar": "08. بلوميكس للزراعة — تموج قطرة الماء والحصاد المستدام"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/09_al_mostashar_group.png",
+          "caption": {
+            "en": "09. Al Mostashar Group — Accounting, tax, and institutional defense",
+            "ar": "09. مجموعة المستشار — المحاسبة والضرائب والحماية المؤسسية"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/10_infinit_control_matrix.png",
+          "caption": {
+            "en": "10. Infinit Control Matrix — Digital micro-controller node array",
+            "ar": "10. Infinit Control Matrix — مصفوفة عقد للتحكم الرقمي"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/11_r_monogram.png",
+          "caption": {
+            "en": "11. R Monogram — Reductive brutalist geometric glyph",
+            "ar": "11. R Monogram — رمز هندسي مبسّط"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/12_al_howaida.png",
+          "caption": {
+            "en": "12. Al Howaida — Architectural towers and luxury real estate silhouette",
+            "ar": "12. الحويدة — أبراج معمارية وعقارات فاخرة"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/13_abu_zeida.png",
+          "caption": {
+            "en": "13. Abu Zeida — Industrial structural framework and hoist crane",
+            "ar": "13. أبو زيدة — هيكل إنشائي صناعي ورافعة"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/14_infinit_control_prism.png",
+          "caption": {
+            "en": "14. Infinit Control Prism — Dual dynamic perspective angles",
+            "ar": "14. Infinit Control Prism — زوايا منظور ديناميكية مزدوجة"
+          },
+          "ratio": "1:1"
+        },
+        {
+          "src": "/assets/clients/15_visual_founder.png",
+          "caption": {
+            "en": "15. Visual Founder — Modern insignia for bespoke design studio",
+            "ar": "15. Visual Founder — شارة معاصرة لاستوديو تصميم مخصص"
+          },
+          "ratio": "1:1"
+        }
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "id": "01",
+      "order": 1,
+      "name": {
+        "en": "El Basha Automotive",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Automotive Diagnostics & Care",
+        "ar": "فحص السيارات والعناية بها"
+      },
+      "logo": "/assets/clients/01_elbasha_motors.png"
+    },
+    {
+      "id": "02",
+      "order": 2,
+      "name": {
+        "en": "RZO Global",
+        "ar": ""
+      },
+      "industry": {
+        "en": "International Trade & Logistics",
+        "ar": "التجارة الدولية والخدمات اللوجستية"
+      },
+      "logo": "/assets/clients/02_rzo_global.png"
+    },
+    {
+      "id": "03",
+      "order": 3,
+      "name": {
+        "en": "R Global",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Investment & Asset Management",
+        "ar": "الاستثمار وإدارة الأصول"
+      },
+      "logo": "/assets/clients/03_r_global.png"
+    },
+    {
+      "id": "04",
+      "order": 4,
+      "name": {
+        "en": "Infinit Control Shield",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Industrial Automation & Security",
+        "ar": "الأتمتة الصناعية والأمن"
+      },
+      "logo": "/assets/clients/04_infinit_control_shield.png"
+    },
+    {
+      "id": "05",
+      "order": 5,
+      "name": {
+        "en": "Infinit Control Loop",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Smart Systems & IoT Infrastructure",
+        "ar": "الأنظمة الذكية وإنترنت الأشياء"
+      },
+      "logo": "/assets/clients/05_infinit_control_loop.png"
+    },
+    {
+      "id": "06",
+      "order": 6,
+      "name": {
+        "en": "R Athlete",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Sports Performance & Apparel",
+        "ar": "الأداء الرياضي والملابس"
+      },
+      "logo": "/assets/clients/06_r_athlete.png"
+    },
+    {
+      "id": "07",
+      "order": 7,
+      "name": {
+        "en": "R Speed",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Performance Tuning & Engineering",
+        "ar": "هندسة وتحسين الأداء"
+      },
+      "logo": "/assets/clients/07_r_turbo.png"
+    },
+    {
+      "id": "08",
+      "order": 8,
+      "name": {
+        "en": "Bloomex Agriculture",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Agri-Tech & Sustainable Crops",
+        "ar": "التكنولوجيا الزراعية والمحاصيل المستدامة"
+      },
+      "logo": "/assets/clients/08_bloomex_agri.png"
+    },
+    {
+      "id": "09",
+      "order": 9,
+      "name": {
+        "en": "Al Mostashar Group",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Accounting, Tax & Legal Advisory",
+        "ar": "المحاسبة والضرائب والاستشارات القانونية"
+      },
+      "logo": "/assets/clients/09_al_mostashar_group.png"
+    },
+    {
+      "id": "10",
+      "order": 10,
+      "name": {
+        "en": "Infinit Control Matrix",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Electronic Hardware & Robotics",
+        "ar": "الأجهزة الإلكترونية والروبوتات"
+      },
+      "logo": "/assets/clients/10_infinit_control_matrix.png"
+    },
+    {
+      "id": "11",
+      "order": 11,
+      "name": {
+        "en": "R Monogram",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Commercial Real Estate",
+        "ar": "العقارات التجارية"
+      },
+      "logo": "/assets/clients/11_r_monogram.png"
+    },
+    {
+      "id": "12",
+      "order": 12,
+      "name": {
+        "en": "Al Howaida Real Estate",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Luxury Developments & Properties",
+        "ar": "التطوير والعقارات الفاخرة"
+      },
+      "logo": "/assets/clients/12_al_howaida.png"
+    },
+    {
+      "id": "13",
+      "order": 13,
+      "name": {
+        "en": "Abu Zeida Industrial",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Heavy Construction & Steel Works",
+        "ar": "الإنشاءات الثقيلة وأعمال الصلب"
+      },
+      "logo": "/assets/clients/13_abu_zeida.png"
+    },
+    {
+      "id": "14",
+      "order": 14,
+      "name": {
+        "en": "Infinit Control Prism",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Clean Energy & Intelligent Grids",
+        "ar": "الطاقة النظيفة والشبكات الذكية"
+      },
+      "logo": "/assets/clients/14_infinit_control_prism.png"
+    },
+    {
+      "id": "15",
+      "order": 15,
+      "name": {
+        "en": "Visual Founder",
+        "ar": ""
+      },
+      "industry": {
+        "en": "Design Studio & Creative Lab",
+        "ar": "استوديو التصميم والإبداع"
+      },
+      "logo": "/assets/clients/15_visual_founder.png"
+    }
+  ],
+  "sections": [
+    {
+      "id": "brand",
+      "order": 1,
+      "name": "ADVISOR",
+      "subtitle": {
+        "en": "STRATEGY & CREATIVE",
+        "ar": "استراتيجية وإبداع"
+      },
+      "logo": "/assets/brand/advisor_monogram.png",
+      "ctaLabel": {
+        "en": "Start a Project",
+        "ar": "ابدأ مشروعك"
+      },
+      "siteTitle": {
+        "en": "ADVISOR — Strategic Marketing & Creative Agency",
+        "ar": "ADVISOR — وكالة التسويق الاستراتيجي والإبداعي"
+      },
+      "siteDescription": {
+        "en": "ADVISOR is a premier strategic marketing and creative agency based in Egypt. We combine market insight, strategic direction, and creative execution to move brands forward.",
+        "ar": "ADVISOR وكالة تسويق استراتيجي وإبداعي في مصر. نجمع بين فهم السوق والتوجيه الاستراتيجي والتنفيذ الإبداعي لدفع العلامات التجارية إلى الأمام."
+      },
+      "fontTheme": "modern"
+    },
+    {
+      "id": "hero",
+      "order": 2,
+      "tag": {
+        "en": "STRATEGIC MARKETING & CREATIVE AGENCY",
+        "ar": "وكالة التسويق الاستراتيجي والإبداعي"
+      },
+      "lines": [
+        {
+          "en": "WE DON’T JUST MARKET.",
+          "ar": "دورنا أكبر من التسويق."
+        },
+        {
+          "en": "WE ADVISE.",
+          "ar": "نوجّه."
+        },
+        {
+          "en": "WE CREATE.",
+          "ar": "نبدع."
+        },
+        {
+          "en": "WE GROW.",
+          "ar": "ننمو."
+        }
+      ],
+      "subcopy": {
+        "en": "Strategy-led marketing and creative solutions built to move brands forward through insight, deliberate art direction, and measurable impact.",
+        "ar": "حلول تسويقية وإبداعية تقودها الاستراتيجية، ترتقي بعلامتك من خلال فهم السوق والتوجيه الفني المدروس والأثر القابل للقياس."
+      },
+      "primaryCta": {
+        "en": "Explore Our Work",
+        "ar": "اكتشف أعمالنا"
+      },
+      "secondaryCta": {
+        "en": "Start a Project",
+        "ar": "ابدأ مشروعك"
+      },
+      "scrollPrompt": {
+        "en": "Scroll to explore",
+        "ar": "مرّر لاكتشاف المزيد"
+      },
+      "ticker": [
+        {
+          "en": "STRATEGY",
+          "ar": "الاستراتيجية"
+        },
+        {
+          "en": "CREATIVE DIRECTION",
+          "ar": "التوجيه الإبداعي"
+        },
+        {
+          "en": "BRANDING",
+          "ar": "الهوية التجارية"
+        },
+        {
+          "en": "SOCIAL MEDIA",
+          "ar": "التواصل الاجتماعي"
+        },
+        {
+          "en": "CONTENT",
+          "ar": "المحتوى"
+        },
+        {
+          "en": "DIGITAL EXPERIENCES",
+          "ar": "التجارب الرقمية"
+        },
+        {
+          "en": "PRODUCTION",
+          "ar": "الإنتاج"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "order": 3,
+      "tag": {
+        "en": "PHILOSOPHY & POSITIONING",
+        "ar": "فلسفتنا ومكانتنا"
+      },
+      "title": {
+        "en": "STRATEGY",
+        "ar": "الاستراتيجية"
+      },
+      "titleAccent": {
+        "en": "BEFORE NOISE.",
+        "ar": "قبل الضجيج."
+      },
+      "lead": {
+        "en": "We believe great marketing starts with understanding. We combine market insight, strategic thinking and creative execution to build brands that communicate clearly, connect meaningfully and grow measurably.",
+        "ar": "نؤمن أن التسويق الناجح يبدأ بالفهم. نجمع بين رؤية السوق والتفكير الاستراتيجي والتنفيذ الإبداعي لبناء علامات تتواصل بوضوح، وتصنع علاقات مؤثرة، وتحقق نمواً قابلاً للقياس."
+      },
+      "body": {
+        "en": "Our role goes beyond executing campaigns. We take the time to analyze consumer behavior across Egyptian and regional Arab markets, uncovering distinctive opportunities to create an indelible brand reality.",
+        "ar": "يتجاوز دورنا تنفيذ الحملات. نحلل سلوك المستهلك في السوق المصري والأسواق العربية لنكتشف فرصاً مميزة تصنع حضوراً راسخاً لعلامتك."
+      },
+      "stats": [
+        {
+          "value": {
+            "en": "100%",
+            "ar": ""
+          },
+          "label": {
+            "en": "DATA-LED STRATEGY",
+            "ar": "استراتيجية مبنية على البيانات"
+          }
+        },
+        {
+          "value": {
+            "en": "60fps",
+            "ar": "60 إطاراً/ثانية"
+          },
+          "label": {
+            "en": "BESPOKE CRAFT",
+            "ar": "إبداع مصمم خصيصاً"
+          }
+        }
+      ],
+      "words": [
+        {
+          "en": "UNDERSTAND",
+          "ar": "نفهم"
+        },
+        {
+          "en": "STRATEGIZE",
+          "ar": "نخطط"
+        },
+        {
+          "en": "CREATE",
+          "ar": "نبدع"
+        },
+        {
+          "en": "CONNECT",
+          "ar": "نتواصل"
+        },
+        {
+          "en": "GROW",
+          "ar": "ننمو"
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "order": 4,
+      "tag": {
+        "en": "FOUNDATIONAL PILLARS",
+        "ar": "ركائزنا الأساسية"
+      },
+      "title": {
+        "en": "VISION &",
+        "ar": "الرؤية و"
+      },
+      "titleAccent": {
+        "en": "MISSION",
+        "ar": "الرسالة"
+      },
+      "visionTag": {
+        "en": "OUR DESTINATION",
+        "ar": "وجهتنا"
+      },
+      "visionTitle": {
+        "en": "OUR VISION",
+        "ar": "رؤيتنا"
+      },
+      "visionQuote": {
+        "en": "“To become a leading strategic marketing partner for premium brands across the region.”",
+        "ar": "«أن نصبح شريكاً رائداً في التسويق الاستراتيجي للعلامات المتميزة في المنطقة.»"
+      },
+      "visionBody": {
+        "en": "We aim to help brands grow through innovative strategies, meaningful communication, and measurable results. We believe every brand has a story worth telling. Our role is to help that story reach the right audience, at the right time, and in the right way.",
+        "ar": "نساعد العلامات على النمو باستراتيجيات مبتكرة وتواصل مؤثر ونتائج قابلة للقياس. نؤمن أن لكل علامة قصة تستحق أن تُروى، ودورنا إيصالها للجمهور المناسب في الوقت المناسب وبالطريقة المناسبة."
+      },
+      "visionKeywords": [
+        {
+          "en": "REGIONAL EXPANSION",
+          "ar": "التوسع الإقليمي"
+        },
+        {
+          "en": "PREMIUM BENCHMARK",
+          "ar": "معيار للتميز"
+        }
+      ],
+      "missionTag": {
+        "en": "HOW WE OPERATE",
+        "ar": "كيف نعمل"
+      },
+      "missionTitle": {
+        "en": "OUR MISSION",
+        "ar": "رسالتنا"
+      },
+      "missionQuote": {
+        "en": "“We help brands make smarter marketing decisions through market understanding, strategic direction, meaningful connections and measurable growth.”",
+        "ar": "«نساعد العلامات على اتخاذ قرارات تسويقية أذكى عبر فهم السوق والتوجيه الاستراتيجي والعلاقات المؤثرة والنمو القابل للقياس.»"
+      },
+      "pillars": [
+        {
+          "label": {
+            "en": "DISCOVERY",
+            "ar": "الاكتشاف"
+          },
+          "name": {
+            "en": "Market Understanding",
+            "ar": "فهم السوق"
+          },
+          "desc": {
+            "en": "Analyzing market dynamics, audience psychology, and growth opportunities.",
+            "ar": "تحليل حركة السوق ودوافع الجمهور وفرص النمو."
+          }
+        },
+        {
+          "label": {
+            "en": "ARCHITECTURE",
+            "ar": "التخطيط"
+          },
+          "name": {
+            "en": "Strategic Direction",
+            "ar": "التوجيه الاستراتيجي"
+          },
+          "desc": {
+            "en": "Turning complex market insights into clear roadmaps and objectives.",
+            "ar": "تحويل رؤى السوق المعقدة إلى خطط وأهداف واضحة."
+          }
+        },
+        {
+          "label": {
+            "en": "STORYTELLING",
+            "ar": "السرد"
+          },
+          "name": {
+            "en": "Meaningful Connections",
+            "ar": "علاقات مؤثرة"
+          },
+          "desc": {
+            "en": "Forging authentic relationships through purposeful creative craft.",
+            "ar": "بناء علاقات حقيقية من خلال إبداع هادف."
+          }
+        },
+        {
+          "label": {
+            "en": "METRICS",
+            "ar": "القياس"
+          },
+          "name": {
+            "en": "Measurable Growth",
+            "ar": "نمو قابل للقياس"
+          },
+          "desc": {
+            "en": "Focusing on concrete commercial return—never vanity campaigns.",
+            "ar": "التركيز على العائد التجاري الفعلي بدلاً من المؤشرات الشكلية."
+          }
+        }
+      ],
+      "missionKeywords": [
+        {
+          "en": "MEASURABLE OUTCOMES",
+          "ar": "نتائج قابلة للقياس"
+        },
+        {
+          "en": "TANGIBLE IMPACT",
+          "ar": "أثر ملموس"
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "order": 5,
+      "tag": {
+        "en": "FULL-SERVICE SPECTRUM",
+        "ar": "خدمات متكاملة"
+      },
+      "title": {
+        "en": "WHAT WE BRING",
+        "ar": "ما نقدمه"
+      },
+      "titleAccent": {
+        "en": "TO THE TABLE.",
+        "ar": "لعلامتك."
+      },
+      "items": [
+        {
+          "title": {
+            "en": "CREATIVE STRATEGY & ART DIRECTION",
+            "ar": "الاستراتيجية الإبداعية والتوجيه الفني"
+          },
+          "desc": {
+            "en": "Strategic concepts, high-level campaign direction, and evocative visual storytelling crafted to differentiate your brand.",
+            "ar": "أفكار استراتيجية وتوجيه متكامل للحملات وسرد بصري مؤثر يمنح علامتك التميز."
+          }
+        },
+        {
+          "title": {
+            "en": "IDENTITY & BRAND CREATION",
+            "ar": "بناء العلامات والهويات"
+          },
+          "desc": {
+            "en": "Complete brand positioning, custom logo marks, comprehensive visual identity systems, and uncompromising guidelines.",
+            "ar": "تحديد مكانة العلامة وتصميم شعارات خاصة وأنظمة هوية بصرية متكاملة وأدلة استخدام دقيقة."
+          }
+        },
+        {
+          "title": {
+            "en": "CREATIVE PRODUCTION",
+            "ar": "الإنتاج الإبداعي"
+          },
+          "desc": {
+            "en": "End-to-end management from concept development and storyboarding to final multi-platform creative execution.",
+            "ar": "إدارة متكاملة من تطوير الفكرة ورسم المشاهد إلى التنفيذ الإبداعي النهائي عبر المنصات."
+          }
+        },
+        {
+          "title": {
+            "en": "SOCIAL MEDIA",
+            "ar": "التواصل الاجتماعي"
+          },
+          "desc": {
+            "en": "Full-scale content calendars, editorial feed architecture, high-converting creative design, and community-first communication.",
+            "ar": "خطط محتوى متكاملة وتنظيم بصري للصفحات وتصميمات تدعم التحويل وتواصل يضع الجمهور أولاً."
+          }
+        },
+        {
+          "title": {
+            "en": "PHOTOGRAPHY & CONTENT",
+            "ar": "التصوير والمحتوى"
+          },
+          "desc": {
+            "en": "Art-directed commercial photography, lifestyle content, and motion graphics built specifically for modern digital platforms.",
+            "ar": "تصوير تجاري بتوجيه فني ومحتوى واقعي ورسوم متحركة مصممة للمنصات الرقمية الحديثة."
+          }
+        },
+        {
+          "title": {
+            "en": "DIGITAL & INTERACTIVE MEDIA",
+            "ar": "الوسائط الرقمية والتفاعلية"
+          },
+          "desc": {
+            "en": "Immersive interactive digital experiences, microsites, and campaign landing pages designed around contemporary user behaviour.",
+            "ar": "تجارب رقمية تفاعلية ومواقع مصغرة وصفحات حملات مبنية على سلوك المستخدم المعاصر."
+          }
+        },
+        {
+          "title": {
+            "en": "UI/UX DESIGN & DEVELOPMENT",
+            "ar": "تصميم وتطوير تجربة المستخدم"
+          },
+          "desc": {
+            "en": "User-centric digital interfaces and digital products marrying sleek minimalist aesthetics with effortless utility.",
+            "ar": "واجهات ومنتجات رقمية تتمحور حول المستخدم وتجمع بين التصميم الأنيق وسهولة الاستخدام."
+          }
+        },
+        {
+          "title": {
+            "en": "PACKAGING DESIGN",
+            "ar": "تصميم التغليف"
+          },
+          "desc": {
+            "en": "Strategic luxury packaging that turns physical consumer goods into unforgettable unboxing brand experiences.",
+            "ar": "تغليف فاخر ومدروس يحوّل فتح المنتج إلى تجربة مميزة لعلامتك."
+          }
+        },
+        {
+          "title": {
+            "en": "PROPOSALS & PRESENTATIONS",
+            "ar": "العروض والمقترحات"
+          },
+          "desc": {
+            "en": "High-stakes investor decks, keynote presentations, and pitch books engineered to communicate complex ideas clearly and persuasively.",
+            "ar": "عروض للمستثمرين وتقديمات رئيسية ومقترحات تنقل الأفكار المعقدة بوضوح وإقناع."
+          }
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "order": 6,
+      "tag": {
+        "en": "AUTHENTIC CASE STUDIES",
+        "ar": "دراسات حالة من أعمالنا"
+      },
+      "title": {
+        "en": "WORK THAT",
+        "ar": "أعمالنا"
+      },
+      "titleAccent": {
+        "en": "SPEAKS FOR ITSELF.",
+        "ar": "تتحدث عن نفسها."
+      },
+      "dragHint": {
+        "en": "← CLICK & DRAG OR SCROLL HORIZONTALLY →",
+        "ar": "← اسحب لاستعراض المشاريع أو مرّر أفقياً →"
+      },
+      "countLabel": {
+        "en": "CLIENT CASE STUDIES",
+        "ar": "دراسات حالة لعملائنا"
+      }
+    },
+    {
+      "id": "why",
+      "order": 7,
+      "tag": {
+        "en": "OUR COMPETITIVE EDGE",
+        "ar": "ما يميزنا"
+      },
+      "title": {
+        "en": "WHY",
+        "ar": "لماذا"
+      },
+      "titleAccent": {
+        "en": "ADVISOR?",
+        "ar": "ADVISOR؟"
+      },
+      "lead": {
+        "en": "Because we believe your brand deserves more than a temporary campaign. It deserves an enduring strategy.",
+        "ar": "لأننا نؤمن أن علامتك تستحق أكثر من حملة مؤقتة؛ تستحق استراتيجية تدوم."
+      },
+      "items": [
+        {
+          "claim": {
+            "en": "WE ADVISE,\nNOT JUST EXECUTE.",
+            "ar": "نقدّم المشورة،\nولا نكتفي بالتنفيذ."
+          },
+          "detail": {
+            "en": "We approach every project from a strategic perspective, using rigorous market insights and competitive analysis to guide every design and media decision.",
+            "ar": "نبدأ كل مشروع برؤية استراتيجية، ونستخدم رؤى السوق والتحليل التنافسي لتوجيه كل قرار تصميمي وإعلامي."
+          }
+        },
+        {
+          "claim": {
+            "en": "WE UNDERSTAND\nTHE AUDIENCE.",
+            "ar": "نفهم\nالجمهور."
+          },
+          "detail": {
+            "en": "We focus on understanding the deep cultural and purchasing behavior of upper and upper-middle audiences across the Egyptian and Arab markets.",
+            "ar": "نركز على فهم الثقافة والسلوك الشرائي لشرائح الجمهور العليا والمتوسطة العليا في الأسواق المصرية والعربية."
+          }
+        },
+        {
+          "claim": {
+            "en": "WE PRIORITIZE\nQUALITY.",
+            "ar": "نضع أولاً\nالجودة."
+          },
+          "detail": {
+            "en": "We believe strong creative work should be purposeful, relevant, and uncompromisingly aligned with the brand's premium tier.",
+            "ar": "نؤمن أن العمل الإبداعي القوي يجب أن يكون هادفاً وملائماً ومتسقاً مع المستوى المتميز للعلامة."
+          }
+        },
+        {
+          "claim": {
+            "en": "WE KEEP IT\nPERSONAL.",
+            "ar": "نجعل التعامل\nشخصياً."
+          },
+          "detail": {
+            "en": "Every client receives a dedicated, tailored leadership approach built around their specific commercial needs and long-term milestones.",
+            "ar": "يحصل كل عميل على إدارة مخصصة تناسب احتياجاته التجارية وأهدافه طويلة المدى."
+          }
+        },
+        {
+          "claim": {
+            "en": "WE MEASURE\nWHAT MATTERS.",
+            "ar": "نقيس\nما يهم."
+          },
+          "detail": {
+            "en": "Our reporting is built around real business analysis, tangible leads, and verifiable financial numbers—never vanity impressions or assumptions.",
+            "ar": "تقاريرنا مبنية على تحليل الأعمال الفعلي والعملاء المحتملين والأرقام المالية القابلة للتحقق، لا على الانطباعات الشكلية أو الافتراضات."
+          }
+        },
+        {
+          "claim": {
+            "en": "WE BUILD\nPARTNERSHIPS.",
+            "ar": "نبني\nشراكات."
+          },
+          "detail": {
+            "en": "We aim for lasting, high-trust client relationships that support sustainable brand growth across decades of market evolution.",
+            "ar": "نسعى لعلاقات طويلة الأمد مع العملاء تقوم على الثقة وتدعم النمو المستدام وسط تطور الأسواق."
+          }
+        }
+      ]
+    },
+    {
+      "id": "clients",
+      "order": 8,
+      "tag": {
+        "en": "LOGOFOLIO & TRUST",
+        "ar": "هويات وثقة"
+      },
+      "title": {
+        "en": "BRANDS WE’VE",
+        "ar": "علامات تجارية"
+      },
+      "titleAccent": {
+        "en": "WORKED WITH.",
+        "ar": "عملنا معها."
+      }
+    },
+    {
+      "id": "statement",
+      "order": 9,
+      "tag": {
+        "en": "THE ADVISOR CREED",
+        "ar": "مبدأ ADVISOR"
+      },
+      "quote": {
+        "en": "“GOOD MARKETING GETS ATTENTION.",
+        "ar": "«التسويق الجيد يجذب الانتباه."
+      },
+      "quoteAccent": {
+        "en": "GREAT MARKETING CREATES DIRECTION.”",
+        "ar": "والتسويق العظيم يصنع الاتجاه.»"
+      },
+      "subquote": {
+        "en": "YOUR BRAND DESERVES MORE THAN A CAMPAIGN.\nIT DESERVES A STRATEGY.",
+        "ar": "علامتك تستحق أكثر من حملة.\nتستحق استراتيجية."
+      }
+    },
+    {
+      "id": "contact",
+      "order": 10,
+      "tag": {
+        "en": "INITIATE ENGAGEMENT",
+        "ar": "لنبدأ التعاون"
+      },
+      "title": {
+        "en": "LET’S CREATE",
+        "ar": "لنصنع معاً"
+      },
+      "titleAccent": {
+        "en": "WHAT’S NEXT.",
+        "ar": "الخطوة القادمة."
+      },
+      "philosophy": {
+        "en": "You dream. We strategize. We create.\nReality begins.",
+        "ar": "أنت تحلم. نحن نخطط ونبدع.\nويبدأ الواقع."
+      },
+      "formTitle": {
+        "en": "START A PROJECT BRIEF",
+        "ar": "أخبرنا عن مشروعك"
+      },
+      "phone": "01599990398",
+      "whatsapp": "201599990398",
+      "phoneLabel": {
+        "en": "DIRECT PHONE / WHATSAPP",
+        "ar": "اتصال مباشر / واتساب"
+      },
+      "officeNote": {
+        "en": "Office: Cairo, Egypt • Available Sunday – Thursday",
+        "ar": "المكتب: القاهرة، مصر • متاحون من الأحد إلى الخميس"
+      },
+      "whatsappCta": {
+        "en": "Chat on WhatsApp",
+        "ar": "تواصل عبر واتساب"
+      }
+    },
+    {
+      "id": "footer",
+      "order": 11,
+      "tagline": {
+        "en": "STRATEGY ✦ CREATIVITY ✦ GROWTH",
+        "ar": "استراتيجية ✦ إبداع ✦ نمو"
+      },
+      "description": {
+        "en": "Advisor is an integrated marketing and creative agency that helps premium brands make smarter marketing decisions.",
+        "ar": "ADVISOR وكالة تسويق وإبداع متكاملة تساعد العلامات المتميزة على اتخاذ قرارات تسويقية أذكى."
+      },
+      "website": "www.advisoregypt.com",
+      "location": {
+        "en": "Cairo, Egypt",
+        "ar": "القاهرة، مصر"
+      },
+      "copyright": {
+        "en": "© 2024 ADVISOR AGENCY. ALL RIGHTS RESERVED. YOU DREAM. WE CREATE. REALITY BEGINS.",
+        "ar": "© 2024 وكالة ADVISOR. جميع الحقوق محفوظة. أنت تحلم. نحن نبدع. ويبدأ الواقع."
+      },
+      "socials": [
+        {
+          "label": {
+            "en": "Instagram",
+            "ar": "إنستجرام"
+          },
+          "url": "https://www.instagram.com/advisor_egypt?stkn=Zjkzdm1lMWJxcjl1"
+        },
+        {
+          "label": {
+            "en": "Facebook",
+            "ar": "فيسبوك"
+          },
+          "url": "https://www.facebook.com/AdvisorMisr?mibextid=ZbWKwL"
+        },
+        {
+          "label": {
+            "en": "LinkedIn",
+            "ar": "لينكدإن"
+          },
+          "url": "https://linkedin.com"
+        }
+      ]
+    }
+  ]
+}

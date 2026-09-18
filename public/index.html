@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADVISOR — Strategic Marketing & Creative Agency</title>
+  <meta name="description" content="ADVISOR is a premier strategic marketing and creative agency based in Egypt. We combine market insight, strategic direction, and creative execution to move brands forward." />
+  <meta name="keywords" content="Advisor, Creative Agency, Strategic Marketing, Branding, Art Direction, Cairo, Egypt, Portfolio" />
+  
+  <!-- Favicon — أيقونة تبويب المتصفح -->
+  <link rel="icon" type="image/png" href="assets/brand/advisor_monogram.png" />
+  
+  <!-- CSS Stylesheets — ترتيب ملفات التنسيق من الأساسي إلى تخصيص اللغة -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/case-study.css" />
+  <link rel="stylesheet" href="css/localization.css" />
+</head>
+<body>
+  <!-- Ambient Atmosphere & Noise Overlay -->
+  <div class="noise-overlay"></div>
+  <div class="ambient-glow glow-purple" style="top: 5vh; left: 10vw; width: 600px; height: 600px;"></div>
+  <div class="ambient-glow glow-blue" style="top: 40vh; right: 5vw; width: 700px; height: 700px;"></div>
+  <div class="ambient-glow glow-purple" style="top: 160vh; left: 5vw; width: 800px; height: 800px;"></div>
+  <div class="ambient-glow glow-purple" style="bottom: 10vh; right: 10vw; width: 900px; height: 900px;"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION — رأس الموقع وروابط الانتقال بين الأقسام
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo — الشعار والاسم التجاري -->
+      <a href="#" class="brand-logo" aria-label="ADVISOR Home">
+        <img src="assets/brand/advisor_monogram.png" alt="ADVISOR" class="brand-monogram-img" data-content-src="brand.logo" />
+        <div class="brand-name-wrap">
+          <span class="brand-title" data-content="brand.name">ADVISOR</span>
+          <span class="brand-sub" data-content="brand.subtitle">STRATEGY & CREATIVE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu — قائمة التنقل للشاشات الكبيرة -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#vision" class="nav-link">Vision & Mission</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Selected Work</a></li>
+          <li><a href="#why-advisor" class="nav-link">Why Advisor</a></li>
+          <li><a href="#clients" class="nav-link">Clients</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Mobile Hamburger -->
+      <div class="nav-actions">
+        <!-- تبديل اللغة متاح على الكمبيوتر والموبايل. -->
+        <button class="language-toggle" type="button" data-language-toggle data-no-i18n aria-label="Switch to Arabic">العربية</button>
+        <a href="#contact" class="btn-magnetic btn-primary" style="padding: 10px 22px; font-size: 0.8125rem;">
+          <span data-content="brand.ctaLabel">Start a Project</span>
+          <span>→</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Fullscreen Mobile Navigation Drawer — قائمة التنقل للموبايل -->
+  <div class="mobile-drawer" aria-hidden="true" inert data-lenis-prevent>
+    <div class="mono-tag" style="margin-bottom: 30px;">MENU NAVIGATION</div>
+    <ul class="mobile-menu-links">
+      <li><a href="#about" class="mobile-menu-link">About</a></li>
+      <li><a href="#vision" class="mobile-menu-link">Vision & Mission</a></li>
+      <li><a href="#services" class="mobile-menu-link">Services</a></li>
+      <li><a href="#work" class="mobile-menu-link">Selected Work</a></li>
+      <li><a href="#why-advisor" class="mobile-menu-link">Why Advisor</a></li>
+      <li><a href="#clients" class="mobile-menu-link">Clients</a></li>
+      <li><a href="#contact" class="mobile-menu-link" style="color: var(--accent-light);" data-content="brand.ctaLabel">Start a Project</a></li>
+    </ul>
+    <div style="margin-top: 40px; font-family: var(--font-mono); font-size: 0.875rem; color: var(--text-dim);">
+      Direct Inquiries: <a href="tel:01599990398" style="color: #fff; text-decoration: none;" data-content="contact.phone" data-content-tel="contact.phone">01599990398</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: HERO SECTION — المقدمة: العنوان الرئيسي والخلفية التفاعلية
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Interactive Cursor-Reactive Fluid Wave Canvas -->
+      <canvas id="heroCanvas" class="hero-canvas"></canvas>
+
+      <div class="container hero-content">
+        <div class="hero-tag-wrap">
+          <span class="mono-tag" data-content="hero.tag">STRATEGIC MARKETING & CREATIVE AGENCY</span>
+        </div>
+
+        <!-- Sequential Kinetic Typography Headline -->
+        <h1 class="hero-headline" data-content-list="hero.lines" aria-label="WE DON'T JUST MARKET. WE ADVISE. WE CREATE. WE GROW.">
+          <span class="hero-line"><span class="hero-line-inner">WE DON’T JUST MARKET.</span></span>
+          <span class="hero-line"><span class="hero-line-inner text-gradient-purple">WE ADVISE.</span></span>
+          <span class="hero-line"><span class="hero-line-inner">WE CREATE.</span></span>
+          <span class="hero-line"><span class="hero-line-inner text-gradient-purple">WE GROW.</span></span>
+        </h1>
+
+        <div class="hero-subrow">
+          <p class="hero-subcopy" data-content="hero.subcopy">
+            Strategy-led marketing and creative solutions built to move brands forward through insight, deliberate art direction, and measurable impact.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#work" class="btn-magnetic btn-primary">
+              <span data-content="hero.primaryCta">Explore Our Work</span>
+              <span>↓</span>
+            </a>
+            <a href="#contact" class="btn-magnetic btn-outline">
+              <span data-content="hero.secondaryCta">Start a Project</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Scroll Prompt -->
+      <a href="#about" class="hero-scroll-prompt" aria-label="Scroll to explore">
+        <span data-content="hero.scrollPrompt">Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- Moving Infinite Horizontal Ticker -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-track" data-content-list="hero.ticker">
+        <span class="ticker-item">STRATEGY <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">CREATIVE DIRECTION <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">BRANDING <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">SOCIAL MEDIA <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">CONTENT <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">DIGITAL EXPERIENCES <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">PRODUCTION <span class="ticker-sparkle">✦</span></span>
+        <!-- Repeated for seamless loop -->
+        <span class="ticker-item">STRATEGY <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">CREATIVE DIRECTION <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">BRANDING <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">SOCIAL MEDIA <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">CONTENT <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">DIGITAL EXPERIENCES <span class="ticker-sparkle">✦</span></span>
+        <span class="ticker-item">PRODUCTION <span class="ticker-sparkle">✦</span></span>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         SECTION 2: ABOUT / WHO WE ARE — تعريف الوكالة وفلسفتها
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="about-visual-backdrop"></div>
+      <div class="container">
+        <div class="about-editorial-grid">
+          <div>
+            <span class="mono-tag" style="margin-bottom: 24px;" data-content="about.tag">PHILOSOPHY & POSITIONING</span>
+            <h2 class="about-headline">
+              <span data-content="about.title">STRATEGY</span><br />
+              <span class="text-gradient-purple" data-content="about.titleAccent">BEFORE NOISE.</span>
+            </h2>
+          </div>
+          <div>
+            <p class="about-text-lead" data-content="about.lead">
+              We believe great marketing starts with understanding. We combine market insight, strategic thinking and creative execution to build brands that communicate clearly, connect meaningfully and grow measurably.
+            </p>
+            <p class="about-text-sub" data-content="about.body">
+              Our role goes beyond executing campaigns. We take the time to analyze consumer behavior across Egyptian and regional Arab markets, uncovering distinctive opportunities to create an indelible brand reality.
+            </p>
+            <div class="about-stats" data-content-list="about.stats">
+              <div>
+                <div class="about-stat-value">100%</div>
+                <div class="about-stat-label">DATA-LED STRATEGY</div>
+              </div>
+              <div class="about-stat-divider"></div>
+              <div>
+                <div class="about-stat-value">60fps</div>
+                <div class="about-stat-label">BESPOKE CRAFT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oversized Kinetic Words Moving at Different Scroll Speeds -->
+        <div class="kinetic-words-wrap" aria-hidden="true">
+          <div class="kinetic-words-row" data-content-list="about.words">
+            <span class="kinetic-word">UNDERSTAND</span>
+            <span class="kinetic-word highlight">STRATEGIZE</span>
+            <span class="kinetic-word">CREATE</span>
+            <span class="kinetic-word highlight">CONNECT</span>
+            <span class="kinetic-word">GROW</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: VISION & MISSION (INTERACTIVE SPLIT-SCREEN) — الرؤية والرسالة في لوحتين تفاعليتين
+         ========================================================================== -->
+    <section class="vision-mission-section" id="vision">
+      <div class="container">
+        <div style="margin-bottom: 48px; text-align: center;">
+          <span class="mono-tag" data-content="vision.tag">FOUNDATIONAL PILLARS</span>
+          <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3.75rem); font-weight: 800; text-transform: uppercase; margin-top: 12px;">
+            <span data-content="vision.title">VISION &</span> <span class="text-gradient-purple" data-content="vision.titleAccent">MISSION</span>
+          </h2>
+        </div>
+
+        <div class="split-screen-container">
+          <div class="split-seam"></div>
+
+          <!-- LEFT: OUR VISION -->
+          <div class="split-panel panel-vision">
+            <div class="split-panel-bg"></div>
+            <div class="split-header">
+              <span class="mono-tag" data-content="vision.visionTag">OUR DESTINATION</span>
+              <h3 class="split-title" data-content="vision.visionTitle">OUR VISION</h3>
+            </div>
+            <div class="split-body">
+              <p class="split-quote" data-content="vision.visionQuote">
+                “To become a leading strategic marketing partner for premium brands across the region.”
+              </p>
+              <p style="font-size: 0.9375rem; line-height: 1.7; color: var(--text-muted);" data-content="vision.visionBody">
+                We aim to help brands grow through innovative strategies, meaningful communication, and measurable results. We believe every brand has a story worth telling. Our role is to help that story reach the right audience, at the right time, and in the right way.
+              </p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-light); z-index: 2;" data-content-list="vision.visionKeywords">
+              <span>REGIONAL EXPANSION</span>
+              <span>✦</span>
+              <span>PREMIUM BENCHMARK</span>
+            </div>
+          </div>
+
+          <!-- RIGHT: OUR MISSION -->
+          <div class="split-panel panel-mission">
+            <div class="split-panel-bg"></div>
+            <div class="split-header">
+              <span class="mono-tag" data-content="vision.missionTag">HOW WE OPERATE</span>
+              <h3 class="split-title" data-content="vision.missionTitle">OUR MISSION</h3>
+            </div>
+            <div class="split-body">
+              <p class="split-quote" data-content="vision.missionQuote">
+                “We help brands make smarter marketing decisions through market understanding, strategic direction, meaningful connections and measurable growth.”
+              </p>
+              <!-- 4 Core Pillars -->
+              <div class="mission-pillars" data-content-list="vision.pillars">
+                <div class="pillar-item">
+                  <div class="pillar-num">01 / DISCOVERY</div>
+                  <div class="pillar-name">Market Understanding</div>
+                  <div class="pillar-desc">Analyzing market dynamics, audience psychology, and growth opportunities.</div>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-num">02 / ARCHITECTURE</div>
+                  <div class="pillar-name">Strategic Direction</div>
+                  <div class="pillar-desc">Turning complex market insights into clear roadmaps and objectives.</div>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-num">03 / STORYTELLING</div>
+                  <div class="pillar-name">Meaningful Connections</div>
+                  <div class="pillar-desc">Forging authentic relationships through purposeful creative craft.</div>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-num">04 / METRICS</div>
+                  <div class="pillar-name">Measurable Growth</div>
+                  <div class="pillar-desc">Focusing on concrete commercial return—never vanity campaigns.</div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-light); z-index: 2;" data-content-list="vision.missionKeywords">
+              <span>MEASURABLE OUTCOMES</span>
+              <span>✦</span>
+              <span>TANGIBLE IMPACT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: SERVICES (VERTICAL FULL-VIEWPORT EDITORIAL) — قائمة الخدمات ووصف كل خدمة
+         ========================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="services-header">
+          <span class="mono-tag" data-content="services.tag">FULL-SERVICE SPECTRUM</span>
+          <h2 class="services-headline">
+            <span data-content="services.title">WHAT WE BRING</span><br />
+            <span class="text-gradient-purple" data-content="services.titleAccent">TO THE TABLE.</span>
+          </h2>
+        </div>
+
+        <div class="services-list" data-content-list="services.items">
+          <!-- 01 -->
+          <div class="service-item">
+            <div class="service-num">01</div>
+            <div>
+              <h3 class="service-title">CREATIVE STRATEGY & ART DIRECTION</h3>
+            </div>
+            <p class="service-desc">Strategic concepts, high-level campaign direction, and evocative visual storytelling crafted to differentiate your brand.</p>
+          </div>
+
+          <!-- 02 -->
+          <div class="service-item">
+            <div class="service-num">02</div>
+            <div>
+              <h3 class="service-title">IDENTITY & BRAND CREATION</h3>
+            </div>
+            <p class="service-desc">Complete brand positioning, custom logo marks, comprehensive visual identity systems, and uncompromising guidelines.</p>
+          </div>
+
+          <!-- 03 -->
+          <div class="service-item">
+            <div class="service-num">03</div>
+            <div>
+              <h3 class="service-title">CREATIVE PRODUCTION</h3>
+            </div>
+            <p class="service-desc">End-to-end management from concept development and storyboarding to final multi-platform creative execution.</p>
+          </div>
+
+          <!-- 04 -->
+          <div class="service-item">
+            <div class="service-num">04</div>
+            <div>
+              <h3 class="service-title">SOCIAL MEDIA</h3>
+            </div>
+            <p class="service-desc">Full-scale content calendars, editorial feed architecture, high-converting creative design, and community-first communication.</p>
+          </div>
+
+          <!-- 05 -->
+          <div class="service-item">
+            <div class="service-num">05</div>
+            <div>
+              <h3 class="service-title">PHOTOGRAPHY & CONTENT</h3>
+            </div>
+            <p class="service-desc">Art-directed commercial photography, lifestyle content, and motion graphics built specifically for modern digital platforms.</p>
+          </div>
+
+          <!-- 06 -->
+          <div class="service-item">
+            <div class="service-num">06</div>
+            <div>
+              <h3 class="service-title">DIGITAL & INTERACTIVE MEDIA</h3>
+            </div>
+            <p class="service-desc">Immersive interactive digital experiences, microsites, and campaign landing pages designed around contemporary user behaviour.</p>
+          </div>
+
+          <!-- 07 -->
+          <div class="service-item">
+            <div class="service-num">07</div>
+            <div>
+              <h3 class="service-title">UI/UX DESIGN & DEVELOPMENT</h3>
+            </div>
+            <p class="service-desc">User-centric digital interfaces and digital products marrying sleek minimalist aesthetics with effortless utility.</p>
+          </div>
+
+          <!-- 08 -->
+          <div class="service-item">
+            <div class="service-num">08</div>
+            <div>
+              <h3 class="service-title">PACKAGING DESIGN</h3>
+            </div>
+            <p class="service-desc">Strategic luxury packaging that turns physical consumer goods into unforgettable unboxing brand experiences.</p>
+          </div>
+
+          <!-- 09 -->
+          <div class="service-item">
+            <div class="service-num">09</div>
+            <div>
+              <h3 class="service-title">PROPOSALS & PRESENTATIONS</h3>
+            </div>
+            <p class="service-desc">High-stakes investor decks, keynote presentations, and pitch books engineered to communicate complex ideas clearly and persuasively.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: SELECTED WORK (HORIZONTAL SHOWCASE & REAL CAMPAIGNS) — معرض الأعمال والفلاتر وبطاقات المشاريع
+         ========================================================================== -->
+    <section class="work-section" id="work">
+      <div class="container">
+        <div class="work-header-wrap">
+          <div>
+            <span class="mono-tag" data-content="work.tag">AUTHENTIC CASE STUDIES</span>
+            <h2 class="work-headline">
+              <span data-content="work.title">WORK THAT</span><br />
+              <span class="text-gradient-purple" data-content="work.titleAccent">SPEAKS FOR ITSELF.</span>
+            </h2>
+          </div>
+
+          <!-- Interactive Category Filter Tabs -->
+          <div class="work-filters" role="group" aria-label="Project categories">
+            <button class="filter-btn active" data-filter="ALL">All Projects</button>
+            <button class="filter-btn" data-filter="REAL ESTATE">Real Estate</button>
+            <button class="filter-btn" data-filter="AUTOMOTIVE">Automotive</button>
+            <button class="filter-btn" data-filter="FASHION">Fashion</button>
+            <button class="filter-btn" data-filter="GIFTS & LIFESTYLE">Gifts & Lifestyle</button>
+            <button class="filter-btn" data-filter="MEDICAL & HEALTHCARE">Healthcare</button>
+            <button class="filter-btn" data-filter="BRANDING">Branding</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Draggable / Horizontal Scrolling Viewport Wrapper -->
+      <div class="projects-slider-wrapper">
+        <button class="slider-arrow-btn slider-arrow-prev" id="projectsPrevBtn" type="button" aria-label="Previous Projects" title="Previous Projects">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </button>
+
+        <div class="projects-slider-viewport" aria-label="Portfolio Projects Carousel">
+          <div class="projects-track" id="projectsTrack">
+            <!-- Populated dynamically by app.js from portfolio-data.js -->
+          </div>
+        </div>
+
+        <button class="slider-arrow-btn slider-arrow-next" id="projectsNextBtn" type="button" aria-label="Next Projects" title="Next Projects">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="container work-controls-row">
+        <span class="mono-tag" style="font-size: 0.75rem;" data-content="work.dragHint">← CLICK & DRAG OR SCROLL HORIZONTALLY →</span>
+        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);"><span id="liveProjectCount" data-no-i18n>6</span> <span data-content="work.countLabel">CLIENT CASE STUDIES</span></span>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: WHY ADVISOR (FULLSCREEN TYPOGRAPHIC STATEMENTS) — أسباب اختيار الوكالة
+         ========================================================================== -->
+    <section class="why-section" id="why-advisor">
+      <div class="container">
+        <div class="why-header">
+          <span class="mono-tag" data-content="why.tag">OUR COMPETITIVE EDGE</span>
+          <h2 class="why-lead-title">
+            <span data-content="why.title">WHY</span><br />
+            <span class="text-gradient-purple" data-content="why.titleAccent">ADVISOR?</span>
+          </h2>
+          <p class="why-lead-sub" data-content="why.lead">
+            Because we believe your brand deserves more than a temporary campaign. It deserves an enduring strategy.
+          </p>
+        </div>
+
+        <div class="why-statements-list" data-content-list="why.items">
+          <!-- Statement 1 -->
+          <div class="why-statement-item">
+            <div class="why-num">01</div>
+            <h3 class="why-claim">WE ADVISE,<br />NOT JUST EXECUTE.</h3>
+            <p class="why-detail">We approach every project from a strategic perspective, using rigorous market insights and competitive analysis to guide every design and media decision.</p>
+          </div>
+
+          <!-- Statement 2 -->
+          <div class="why-statement-item">
+            <div class="why-num">02</div>
+            <h3 class="why-claim">WE UNDERSTAND<br />THE AUDIENCE.</h3>
+            <p class="why-detail">We focus on understanding the deep cultural and purchasing behavior of upper and upper-middle audiences across the Egyptian and Arab markets.</p>
+          </div>
+
+          <!-- Statement 3 -->
+          <div class="why-statement-item">
+            <div class="why-num">03</div>
+            <h3 class="why-claim">WE PRIORITIZE<br />QUALITY.</h3>
+            <p class="why-detail">We believe strong creative work should be purposeful, relevant, and uncompromisingly aligned with the brand's premium tier.</p>
+          </div>
+
+          <!-- Statement 4 -->
+          <div class="why-statement-item">
+            <div class="why-num">04</div>
+            <h3 class="why-claim">WE KEEP IT<br />PERSONAL.</h3>
+            <p class="why-detail">Every client receives a dedicated, tailored leadership approach built around their specific commercial needs and long-term milestones.</p>
+          </div>
+
+          <!-- Statement 5 -->
+          <div class="why-statement-item">
+            <div class="why-num">05</div>
+            <h3 class="why-claim">WE MEASURE<br />WHAT MATTERS.</h3>
+            <p class="why-detail">Our reporting is built around real business analysis, tangible leads, and verifiable financial numbers—never vanity impressions or assumptions.</p>
+          </div>
+
+          <!-- Statement 6 -->
+          <div class="why-statement-item">
+            <div class="why-num">06</div>
+            <h3 class="why-claim">WE BUILD<br />PARTNERSHIPS.</h3>
+            <p class="why-detail">We aim for lasting, high-trust client relationships that support sustainable brand growth across decades of market evolution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: CLIENTS (MONOCHROME MARQUEE & INTERACTIVE WALL) — شريط وشبكة العملاء
+         ========================================================================== -->
+    <section class="clients-section" id="clients">
+      <div class="container">
+        <div class="clients-header">
+          <span class="mono-tag" data-content="clients.tag">LOGOFOLIO & TRUST</span>
+          <h2 class="clients-headline">
+            <span data-content="clients.title">BRANDS WE’VE</span><br />
+            <span class="text-gradient-purple" data-content="clients.titleAccent">WORKED WITH.</span>
+          </h2>
+        </div>
+      </div>
+
+      <!-- Continuous Horizontal Marquee -->
+      <div class="clients-marquee-wrap" aria-hidden="true">
+        <div class="clients-marquee-track" id="clientsMarqueeTrack">
+          <!-- Populated dynamically by app.js from portfolio-data.js -->
+        </div>
+      </div>
+
+      <!-- Interactive Client Logo Wall Grid -->
+      <div class="container">
+        <div class="clients-interactive-grid" id="clientsInteractiveGrid">
+          <!-- Populated dynamically by app.js from portfolio-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: CREATIVE STATEMENT (CINEMATIC KINETIC INTERLUDE) — العبارة الإبداعية الفاصلة بين الأقسام
+         ========================================================================== -->
+    <section class="statement-section" id="creed">
+      <div class="container">
+        <div class="statement-box">
+          <span class="mono-tag" style="margin-bottom: 24px;" data-content="statement.tag">THE ADVISOR CREED</span>
+          <h2 class="statement-quote-large">
+            <span data-content="statement.quote">“GOOD MARKETING GETS ATTENTION.</span><br />
+            <span class="text-gradient-purple" data-content="statement.quoteAccent">GREAT MARKETING CREATES DIRECTION.”</span>
+          </h2>
+          <p class="statement-subquote" data-content="statement.subquote">
+            YOUR BRAND DESERVES MORE THAN A CAMPAIGN.<br />
+            IT DESERVES A STRATEGY.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 10: CONTACT / CTA (LET'S CREATE WHAT'S NEXT) — التواصل ونموذج الاستفسار
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-layout-grid">
+          <!-- Left Column: Information -->
+          <div class="contact-info-col">
+            <div>
+              <span class="mono-tag" style="margin-bottom: 20px;" data-content="contact.tag">INITIATE ENGAGEMENT</span>
+              <h2 class="contact-headline">
+                <span data-content="contact.title">LET’S CREATE</span><br />
+                <span class="text-gradient-purple" data-content="contact.titleAccent">WHAT’S NEXT.</span>
+              </h2>
+              <p class="contact-philosophy" data-content="contact.philosophy">
+                You dream. We strategize. We create.<br />
+                Reality begins.
+              </p>
+            </div>
+
+            <!-- Direct Contact Card -->
+            <div class="contact-direct-card">
+              <div class="direct-label" data-content="contact.phoneLabel">DIRECT PHONE / WHATSAPP</div>
+              <a href="tel:01599990398" class="direct-phone-link" data-content-tel="contact.phone">
+                <span data-content="contact.phone">01599990398</span>
+                <span>↗</span>
+              </a>
+              <div class="direct-subtext" data-content="contact.officeNote">Office: Cairo, Egypt • Available Sunday – Thursday</div>
+              <div style="margin-top: 16px;">
+                <a href="https://wa.me/201599990398" target="_blank" rel="noopener noreferrer" class="btn-magnetic btn-outline" style="padding: 8px 18px; font-size: 0.75rem;">
+                  <span data-content="contact.whatsappCta">Chat on WhatsApp</span>
+                  <span>💬</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Project Planner Form -->
+          <div class="contact-form-wrap">
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 24px;" data-content="contact.formTitle">
+              START A PROJECT BRIEF
+            </h3>
+
+            <form id="projectInquiryForm">
+              <!-- Services Multi-select -->
+              <div class="form-block">
+                <label class="form-block-label">I'm interested in:</label>
+                <div class="service-toggle-grid">
+                  <button type="button" class="service-toggle-btn" data-service="Strategy & Direction">Strategy & Direction</button>
+                  <button type="button" class="service-toggle-btn" data-service="Brand Creation">Brand Identity</button>
+                  <button type="button" class="service-toggle-btn" data-service="Social Media">Social Media</button>
+                  <button type="button" class="service-toggle-btn" data-service="Creative Production">Production</button>
+                  <button type="button" class="service-toggle-btn" data-service="Photography">Photography</button>
+                  <button type="button" class="service-toggle-btn" data-service="UI/UX & Web">UI/UX & Web</button>
+                  <button type="button" class="service-toggle-btn" data-service="Packaging">Packaging</button>
+                </div>
+              </div>
+
+              <!-- Contact Inputs — حقول الاستفسار؛ required يحدد البيانات المطلوبة -->
+              <div class="form-inputs-row">
+                <div class="input-field-group">
+                  <input type="text" id="clientName" class="custom-input" placeholder="Your Name *" required />
+                </div>
+                <div class="input-field-group">
+                  <input type="email" id="clientEmail" class="custom-input" placeholder="Your Email *" required />
+                </div>
+              </div>
+
+              <div class="form-inputs-row">
+                <div class="input-field-group">
+                  <input type="tel" id="clientPhone" class="custom-input" placeholder="Phone Number (e.g. 010...)" />
+                </div>
+                <div class="input-field-group">
+                  <select id="clientBudget" class="custom-input" style="color: var(--text-white); background-color: #161524;">
+                    <option value="">Estimated Budget (Optional)</option>
+                    <option value="Under $5,000 / Under 250K EGP">&lt; $5,000 / &lt; 250,000 EGP</option>
+                    <option value="$5,000 - $15,000 / 250K - 750K EGP">$5,000 – $15,000 / 250K – 750K EGP</option>
+                    <option value="$15,000 - $35,000 / 750K - 1.7M EGP">$15,000 – $35,000 / 750K – 1.7M EGP</option>
+                    <option value="$35,000+ / 1.7M+ EGP">$35,000+ / 1.7M+ EGP</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="input-field-group">
+                <textarea id="clientBrief" class="custom-input" placeholder="Tell us about your brand, objectives, or timeline..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-magnetic btn-primary form-submit-btn">
+                <span>SUBMIT INQUIRY VIA WHATSAPP / DIRECT</span>
+                <span>→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 11: FOOTER — تذييل الموقع: روابط وخبرات ووسائل التواصل
+       ========================================================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-wrap">
+          <a href="#" class="footer-logo">
+            <img src="assets/brand/advisor_monogram.png" alt="ADVISOR" style="width: 44px; height: 44px; object-fit: contain;" data-content-src="brand.logo" />
+            <span data-content="brand.name" style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; letter-spacing: 0.18em;">ADVISOR</span>
+          </a>
+          <div class="footer-tagline" data-content="footer.tagline">
+            STRATEGY ✦ CREATIVITY ✦ GROWTH
+          </div>
+          <p class="footer-desc" data-content="footer.description">
+            Advisor is an integrated marketing and creative agency that helps premium brands make smarter marketing decisions.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">About Agency</a></li>
+            <li><a href="#vision" class="footer-link">Vision & Mission</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#work" class="footer-link">Selected Work</a></li>
+            <li><a href="#why-advisor" class="footer-link">Why Advisor</a></li>
+            <li><a href="#clients" class="footer-link">Clients Wall</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <div class="footer-col-title">EXPERTISE</div>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link">Creative Strategy</a></li>
+            <li><a href="#services" class="footer-link">Brand Creation</a></li>
+            <li><a href="#services" class="footer-link">Social Media</a></li>
+            <li><a href="#services" class="footer-link">Creative Production</a></li>
+            <li><a href="#services" class="footer-link">Packaging Design</a></li>
+            <li><a href="#services" class="footer-link">UI/UX & Web</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Social -->
+        <div>
+          <div class="footer-col-title">DIRECT CONTACT</div>
+          <div style="margin-bottom: 16px;">
+            <a href="tel:01599990398" style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; color: #fff; text-decoration: none;" data-content="contact.phone" data-content-tel="contact.phone">
+              01599990398
+            </a>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--text-dim); margin-bottom: 24px;">
+            <span data-content="footer.website">www.advisoregypt.com</span><br />
+            <span data-content="footer.location">Cairo, Egypt</span>
+          </div>
+          <div class="footer-col-title">SOCIAL CHANNELS</div>
+          <div style="display: flex; gap: 14px;" data-content-list="footer.socials">
+            <a href="https://www.instagram.com/advisor_egypt?stkn=Zjkzdm1lMWJxcjl1" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+            <span style="color: var(--text-dim);">•</span>
+            <a href="https://www.facebook.com/AdvisorMisr?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="footer-link">Facebook</a>
+            <span style="color: var(--text-dim);">•</span>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-row">
+        <div class="footer-copy" data-content="footer.copyright">
+          © 2024 ADVISOR AGENCY. ALL RIGHTS RESERVED. YOU DREAM. WE CREATE. REALITY BEGINS.
+        </div>
+        <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to Top">
+          ↑
+        </button>
+      </div>
+    <!-- FIX: moved admin-entry inside the container for proper layout flow -->
+    <a href="/admin" class="admin-entry">Content admin</a>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FULL-SCREEN EDITORIAL CASE STUDY MODAL — النافذة المستقلة لقراءة تفاصيل المشروع
+       ========================================================================== -->
+  <div id="caseStudyOverlay" class="case-study-overlay" role="dialog" aria-modal="true" aria-labelledby="caseTitle" aria-hidden="true" inert data-lenis-prevent tabindex="-1">
+    <!-- Sticky Header Bar -->
+    <div class="case-study-bar">
+      <div class="case-study-breadcrumb">
+        <span class="breadcrumb-cat" id="caseBreadcrumbCat" data-no-i18n>REAL ESTATE</span>
+        <span>/</span>
+        <span id="caseBreadcrumbTitle" data-no-i18n>DEYAR RESIDENCES</span>
+      </div>
+      <div class="case-study-controls">
+        <button class="language-toggle" type="button" data-language-toggle data-no-i18n aria-label="Switch to Arabic">العربية</button>
+        <button id="casePrevBtn" class="case-nav-btn" aria-label="Previous Case Study">
+          <span>←</span>
+          <span>PREV</span>
+        </button>
+        <button id="caseNextBtn" class="case-nav-btn" aria-label="Next Case Study">
+          <span>NEXT</span>
+          <span>→</span>
+        </button>
+        <button id="caseCloseBtn" class="case-close-btn" aria-label="Close Case Study (Escape)">
+          ✕
+        </button>
+      </div>
+    </div>
+
+    <!-- Case Study Body Content -->
+    <div class="case-study-content">
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-meta">
+          <span class="mono-tag" id="caseProjectNumber">PROJECT 01</span>
+          <span class="service-pill" id="caseCategoryBadge" data-no-i18n>REAL ESTATE</span>
+        </div>
+        <h1 class="case-title" id="caseTitle" data-no-i18n>DEYAR RESIDENCES</h1>
+        <p class="case-subtitle" id="caseSubtitle" data-no-i18n>High-End Property Investment & Living Experience</p>
+
+        <!-- Metadata Specs Grid -->
+        <div class="case-specs-grid">
+          <div class="spec-item">
+            <span class="spec-label">CLIENT</span>
+            <span class="spec-value" id="specClient" data-no-i18n>Deyar Developments</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">INDUSTRY</span>
+            <span class="spec-value" id="specIndustry" data-no-i18n>Real Estate</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">YEAR</span>
+            <span class="spec-value" id="specYear" data-no-i18n>2024</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">SERVICES PROVIDED</span>
+            <span class="spec-value" id="specServices" data-no-i18n>Social Strategy, Creative Direction</span>
+          </div>
+        </div>
+
+        <!-- Master Presentation Board Image -->
+        <div class="case-master-visual">
+          <img id="caseMasterImg" data-no-i18n src="assets/portfolio/deyar/deyar_campaign_board.jpg" alt="Campaign Board" class="case-master-img" />
+        </div>
+      </div>
+
+      <!-- Strategic Narrative (Challenge, Approach, Direction) -->
+      <div class="case-narrative-grid">
+        <div class="narrative-card">
+          <span class="narrative-tag">01 / MARKET CONTEXT</span>
+          <h3 class="narrative-heading">THE CHALLENGE</h3>
+          <p class="narrative-text" id="caseChallenge" data-no-i18n></p>
+        </div>
+
+        <div class="narrative-card">
+          <span class="narrative-tag">02 / STRATEGIC FORMULATION</span>
+          <h3 class="narrative-heading">THE APPROACH</h3>
+          <p class="narrative-text" id="caseApproach" data-no-i18n></p>
+        </div>
+      </div>
+
+      <div class="narrative-card" style="margin-bottom: clamp(60px, 10vh, 120px);">
+        <span class="narrative-tag">03 / ART DIRECTION & MESSAGING</span>
+        <h3 class="narrative-heading">THE CREATIVE DIRECTION</h3>
+        <p class="narrative-text" id="caseCreativeDirection" data-no-i18n></p>
+      </div>
+
+      <!-- Key Results Metrics Row -->
+      <div class="case-results-strip">
+        <h3 class="results-heading">
+          <span>MEASURABLE BUSINESS IMPACT</span>
+          <span style="color: var(--accent-light);">✦</span>
+        </h3>
+        <div class="results-metrics-grid" id="caseResultsContainer">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Editorial Campaign Visuals Gallery -->
+      <div class="case-gallery-section">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <span class="mono-tag">CAMPAIGN SPREADS</span>
+            <h3 class="gallery-section-title">EDITORIAL VISUAL ASSETS</h3>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);">ORIGINAL ADVISOR CREATIVE DESIGNS</span>
+        </div>
+
+        <div class="case-editorial-gallery" id="caseEditorialGallery">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Next Project Teaser -->
+      <div class="case-next-project" id="caseNextTeaser">
+        <div>
+          <div class="next-label" id="caseNextNumber">NEXT UP — 02</div>
+          <div class="next-title" id="caseNextTitle" data-no-i18n>EL BASHA MOTORS</div>
+        </div>
+        <div class="btn-magnetic btn-primary" style="padding: 16px 32px;">
+          <span>READ NEXT CASE STUDY</span>
+          <span>→</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SCRIPTS (OFFLINE-READY VENDORS + APPLICATION CODE)
+       ========================================================================== -->
+  <script src="vendor/lenis.min.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  
+  <!-- ترتيب التحميل: إعدادات ← محتوى وترجمات ← خدمات مشتركة ← التفاعلات. -->
+  <script src="js/site-config.js"></script>
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/project-translations.js"></script>
+  <script src="js/content-api.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site-sections.js"></script>
+  <script src="js/scroll-manager.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/hero-canvas.js"></script>
+  <script src="js/split-vision.js"></script>
+  <script src="js/case-study-modal.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

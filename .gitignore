@@ -1,0 +1,11 @@
+.sites-runtime/
+extracted_images/
+extracted_slides/
+*.zip
+
+node_modules/
+dist/
+.env
+.env.local
+.wrangler/
+node_modules/

@@ -1,0 +1,1917 @@
+/* ==========================================================================
+   ADVISOR AGENCY — MAIN STYLESHEET
+   Aesthetics: Deep Pitch Black, Electric Violet, Oversized Typography
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Space+Mono:wght@400;700&family=Syne:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=Cairo:wght@400;600;700&family=Tajawal:wght@300;400;500;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --bg-black: #060608;
+  --bg-surface: #0a0a0f;
+  --bg-card: #101017;
+  --bg-card-hover: #161524;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(139, 92, 246, 0.4);
+
+  /* Electric Purple Accents */
+  --accent-purple: #8b5cf6;
+  --accent-purple-glow: rgba(139, 92, 246, 0.35);
+  --accent-violet: #7c3aed;
+  --accent-magenta: #a855f7;
+  --accent-light: #c084fc;
+  --accent-deep-blue: #3b82f6;
+  --accent-ultraviolet: #4f46e5;
+
+  /* Text Colors */
+  --text-white: #ffffff;
+  --text-muted: #9ca3af;
+  --text-dim: #6b7280;
+
+  /* Typography (Default: Modern) */
+  --font-display: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* FIX: Layout & Spacing — these were previously declared OUTSIDE any :root
+     block, causing var(--nav-height), var(--container-max), var(--section-padding),
+     and easing references to silently fail. Now properly inside base :root. */
+  --nav-height: 84px;
+  --container-max: 1440px;  /* FIX: reduced from 1520px for better fit on standard screens */
+  --section-padding: clamp(80px, 12vh, 160px);
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+:root.font-classic {
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root.font-arabic {
+  --font-display: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* توحيد الأنماط الافتراضية وتنسيق الصفحة — Reset & Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  /* Lenis handles smooth scroll */
+}
+
+body {
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* شكل شريط التمرير — Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252536;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-purple);
+}
+
+/* لون تحديد النص — Selection */
+::selection {
+  background: var(--accent-purple);
+  color: #ffffff;
+}
+
+/* فئات مشتركة للحاويات والنصوص — Utilities */
+.container {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(20px, 4vw, 60px);
+  padding-right: clamp(20px, 4vw, 60px);
+  width: 100%;
+  /* FIX: added box-sizing to ensure padding doesn't push past max-width */
+  box-sizing: border-box;
+}
+
+.mono-tag {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mono-tag::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-purple);
+  box-shadow: 0 0 10px var(--accent-purple);
+}
+
+/* طبقة ملمس الخلفية — Noise Texture Overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.025'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 998;
+}
+
+/* إضاءات الخلفية المحيطة — Atmospheric Ambient Lights */
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-purple {
+  background: radial-gradient(circle, var(--accent-purple) 0%, rgba(124, 58, 237, 0) 70%);
+}
+
+.glow-blue {
+  background: radial-gradient(circle, var(--accent-ultraviolet) 0%, rgba(59, 130, 246, 0) 70%);
+}
+
+/* الشعار وشريط التنقل العلوي — Header & Navigation */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 100;
+  transition: background-color 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.site-header.scrolled {
+  background-color: rgba(6, 6, 8, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+.brand-monogram-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.4s var(--ease-out-expo), filter 0.4s ease;
+}
+
+.brand-logo:hover .brand-monogram-img {
+  transform: scale(1.08) rotate(4deg);
+  filter: drop-shadow(0 0 12px var(--accent-purple));
+}
+
+.brand-name-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1;
+}
+
+.brand-sub {
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  letter-spacing: 0.22em;
+  color: var(--accent-light);
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+/* روابط القائمة الرئيسية — Nav Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 3vw, 40px);
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: color 0.3s ease;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-light));
+  transition: width 0.3s var(--ease-out-expo);
+}
+
+.nav-link:hover {
+  color: var(--text-white);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* شكل وحالات الأزرار التفاعلية — Magnetic Buttons */
+.btn-magnetic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 999px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s var(--ease-out-expo), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-violet) 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 24px rgba(139, 92, 246, 0.35);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 36px rgba(139, 92, 246, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-white);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: var(--accent-purple);
+  color: #ffffff;
+  box-shadow: 0 0 24px rgba(139, 92, 246, 0.25);
+}
+
+/* زر فتح قائمة الهاتف — Mobile Toggle */
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 101;
+}
+
+.mobile-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: var(--text-white);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* قائمة الهاتف بملء الشاشة — Fullscreen Mobile Menu Drawer */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(6, 6, 8, 0.98);
+  backdrop-filter: blur(25px);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.mobile-drawer.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mobile-menu-link {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  font-weight: 800;
+  color: var(--text-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.mobile-menu-link:hover {
+  color: var(--accent-light);
+  transform: translateX(10px);
+}
+
+/* ==========================================================================
+   SECTION 1: HERO SECTION
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: var(--nav-height);
+  overflow: hidden;
+}
+
+.hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: clamp(40px, 8vh, 80px);
+  padding-bottom: clamp(60px, 10vh, 120px);
+}
+
+.hero-tag-wrap {
+  margin-bottom: clamp(24px, 4vh, 40px);
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  /* FIX: capped max font-size to prevent overflow on standard 1440px screens */
+  font-size: clamp(2.5rem, 6.5vw, 5.75rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: clamp(28px, 5vh, 48px);
+  /* FIX: prevent long words from overflowing container */
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.hero-line {
+  display: block;
+  overflow: hidden;
+}
+
+.hero-line-inner {
+  display: inline-block;
+  transform: translateY(110%);
+  opacity: 0;
+  transition: transform 1s var(--ease-out-expo), opacity 0.8s ease;
+}
+
+.hero-line.active .hero-line-inner {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #ffffff 20%, var(--accent-light) 65%, var(--accent-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subrow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: flex-end;
+}
+
+.hero-subcopy {
+  font-size: clamp(1.125rem, 1.8vw, 1.5rem);
+  color: var(--text-muted);
+  max-width: 580px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* مؤشر متابعة التمرير — Scroll Indicator */
+.hero-scroll-prompt {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hero-scroll-prompt:hover {
+  color: var(--accent-light);
+}
+
+.scroll-line {
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, var(--accent-purple), transparent);
+  animation: scrollPulse 2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+/* شريط الكلمات المتكرر أفقياً — Infinite Horizontal Ticker */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(16, 16, 23, 0.8);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: tickerFlow 28s linear infinite;
+  width: max-content;
+}
+
+.ticker-item {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ticker-sparkle {
+  color: var(--accent-purple);
+  font-size: 0.875rem;
+  filter: drop-shadow(0 0 6px var(--accent-purple));
+}
+
+/* ==========================================================================
+   SECTION 2: ABOUT / WHO WE ARE — تعريف الوكالة وفلسفتها
+   ========================================================================== */
+.about-section {
+  position: relative;
+  padding: var(--section-padding) 0;
+  overflow: hidden;
+}
+
+.about-editorial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(40px, 8vw, 100px);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.about-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5.5vw, 5rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.about-text-lead {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.55;
+  color: var(--text-white);
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.about-text-sub {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+/* تنسيق شريط الكلمات المتحركة — Kinetic Words Marquee Stream */
+.kinetic-words-wrap {
+  margin-top: clamp(60px, 10vh, 120px);
+  overflow: hidden;
+  position: relative;
+}
+
+.kinetic-words-row {
+  display: flex;
+  white-space: nowrap;
+  gap: clamp(20px, 4vw, 60px);
+  padding: 10px 0;
+}
+
+.kinetic-word {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 9rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  transition: -webkit-text-stroke 0.4s ease, color 0.4s ease, transform 0.4s var(--ease-out-expo);
+  cursor: default;
+}
+
+.kinetic-word:hover,
+.kinetic-word.highlight {
+  color: var(--text-white);
+  -webkit-text-stroke: 1px var(--accent-purple);
+  text-shadow: 0 0 30px var(--accent-purple-glow);
+  transform: scale(1.03);
+}
+
+.about-visual-backdrop {
+  position: absolute;
+  right: -10%;
+  top: 10%;
+  width: 55%;
+  height: 80%;
+  background: url('../assets/brand/advisor_arch_glow.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+  filter: blur(8px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   SECTION 3: VISION & MISSION (INTERACTIVE SPLIT-SCREEN) — الرؤية والرسالة في لوحتين تفاعليتين
+   ========================================================================== */
+.vision-mission-section {
+  position: relative;
+  padding: var(--section-padding) 0;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.split-screen-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 650px;
+  border-radius: 24px;
+  border: 1px solid var(--border-subtle);
+  background: rgba(16, 16, 23, 0.4);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  position: relative;
+}
+
+.split-seam {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent-purple), transparent);
+  box-shadow: 0 0 16px var(--accent-purple);
+  z-index: 10;
+  transform: translateX(-50%);
+  transition: left 0.6s var(--ease-out-expo);
+}
+
+.split-panel {
+  padding: clamp(40px, 6vw, 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: flex 0.6s var(--ease-out-expo), background-color 0.4s ease;
+  overflow: hidden;
+}
+
+.split-panel:hover {
+  background-color: rgba(139, 92, 246, 0.04);
+}
+
+.split-panel-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+  transition: opacity 0.5s ease, transform 0.8s var(--ease-out-expo);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.split-panel:hover .split-panel-bg {
+  opacity: 0.25;
+  transform: scale(1.05);
+}
+
+.panel-vision .split-panel-bg {
+  background: url('../assets/brand/advisor_light_wave.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.panel-mission .split-panel-bg {
+  background: url('../assets/brand/advisor_particle_splash.png') no-repeat center center;
+  background-size: cover;
+}
+
+.split-header {
+  position: relative;
+  z-index: 2;
+}
+
+.split-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4vw, 3.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-top: 14px;
+}
+
+.split-body {
+  position: relative;
+  z-index: 2;
+  margin: 40px 0;
+}
+
+.split-quote {
+  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 24px;
+}
+
+.mission-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.pillar-item {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.pillar-item:hover {
+  border-color: var(--accent-purple);
+  transform: translateY(-2px);
+}
+
+.pillar-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-light);
+  margin-bottom: 6px;
+}
+
+.pillar-name {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 4px;
+}
+
+.pillar-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   SECTION 4: SERVICES (VERTICAL FULL-VIEWPORT EDITORIAL) — قائمة الخدمات ووصف كل خدمة
+   ========================================================================== */
+.services-section {
+  position: relative;
+  padding: var(--section-padding) 0;
+}
+
+.services-header {
+  margin-bottom: clamp(48px, 8vh, 96px);
+}
+
+.services-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.service-item {
+  padding: clamp(32px, 5vh, 64px) 0;
+  border-bottom: 1px solid var(--border-subtle);
+  display: grid;
+  grid-template-columns: 120px 1.5fr 1fr;
+  gap: 40px;
+  align-items: center;
+  transition: background-color 0.4s ease, padding 0.4s var(--ease-out-expo);
+  position: relative;
+}
+
+.service-item:hover {
+  background-color: rgba(139, 92, 246, 0.03);
+  padding-left: clamp(10px, 2vw, 30px);
+  padding-right: clamp(10px, 2vw, 30px);
+}
+
+.service-num {
+  font-family: var(--font-mono);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--text-dim);
+  font-weight: 700;
+  transition: color 0.3s ease, transform 0.3s var(--ease-out-expo);
+}
+
+.service-item:hover .service-num {
+  color: var(--accent-light);
+  transform: translateX(6px);
+}
+
+.service-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--text-white);
+  transition: color 0.3s ease;
+}
+
+.service-item:hover .service-title {
+  color: var(--accent-light);
+}
+
+.service-desc {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 420px;
+}
+
+/* ==========================================================================
+   SECTION 5: SELECTED WORK (HORIZONTAL SHOWCASE & FILTERS) — تنسيق معرض الأعمال والفلاتر
+   ========================================================================== */
+.work-section {
+  position: relative;
+  padding: var(--section-padding) 0;
+  background-color: var(--bg-black);
+  overflow: hidden;
+}
+
+.work-header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: clamp(36px, 6vh, 60px);
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.work-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/* أزرار فلترة الأعمال — Filter Tabs */
+.work-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  color: var(--text-white);
+  border-color: var(--accent-purple);
+}
+
+.filter-btn.active {
+  background: var(--accent-purple);
+  color: #ffffff;
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 16px var(--accent-purple-glow);
+}
+
+/* حاوية التمرير الأفقي للمشاريع — Horizontal Projects Container */
+.projects-slider-viewport {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px clamp(20px, 4vw, 50px);
+  cursor: grab;
+  scroll-behavior: smooth;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none;
+}
+
+.projects-slider-viewport::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.projects-slider-viewport:active {
+  cursor: grabbing;
+}
+
+.projects-track {
+  display: flex;
+  gap: clamp(24px, 3.5vw, 48px);
+  width: max-content;
+}
+
+/* صورة المشروع وتفاصيل البطاقة — Project Card */
+.project-card {
+  width: clamp(320px, 38vw, 540px);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s var(--ease-out-expo), border-color 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-active);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6), 0 0 30px rgba(139, 92, 246, 0.15);
+}
+
+.project-canvas-wrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  position: relative;
+  background: #0d0d14;
+}
+
+.project-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out-expo), filter 0.5s ease;
+}
+
+.project-card:hover .project-thumb {
+  transform: scale(1.06);
+}
+
+.project-overlay-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(6, 6, 8, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+}
+
+.project-info {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.project-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.project-num {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-dim);
+}
+
+.project-year {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-dim);
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 1.625rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: var(--accent-light);
+}
+
+.project-services-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+
+.service-pill {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.project-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-white);
+  text-decoration: none;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 18px;
+  transition: color 0.3s ease, gap 0.3s var(--ease-out-expo);
+}
+
+.project-card:hover .project-action-btn {
+  color: var(--accent-light);
+  gap: 14px;
+}
+
+/* حاوية الشريط وأزرار الأسهم الجانبية — Projects Slider Wrapper & Side Arrows */
+.projects-slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 25;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(10, 10, 16, 0.85);
+  border: 1px solid var(--border-active);
+  color: var(--text-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(139, 92, 246, 0.25);
+}
+
+.slider-arrow-prev {
+  left: clamp(12px, 3vw, 40px);
+}
+
+.slider-arrow-next {
+  right: clamp(12px, 3vw, 40px);
+}
+
+.slider-arrow-btn:hover {
+  background: var(--accent-purple);
+  border-color: var(--accent-purple);
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.12);
+  box-shadow: 0 10px 40px var(--accent-purple-glow), 0 0 30px rgba(139, 92, 246, 0.6);
+}
+
+.slider-arrow-btn:active {
+  transform: translateY(-50%) scale(0.94);
+}
+
+.slider-arrow-btn svg {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease;
+}
+
+.slider-arrow-prev:hover svg {
+  transform: translateX(-4px);
+}
+
+.slider-arrow-next:hover svg {
+  transform: translateX(4px);
+}
+
+.work-controls-row {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   SECTION 7: WHY ADVISOR (FULLSCREEN TYPOGRAPHIC STATEMENTS) — أسباب اختيار الوكالة
+   ========================================================================== */
+.why-section {
+  position: relative;
+  padding: var(--section-padding) 0;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.why-header {
+  margin-bottom: clamp(60px, 10vh, 120px);
+}
+
+.why-lead-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 7.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.why-lead-sub {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  color: var(--accent-light);
+  max-width: 680px;
+  line-height: 1.5;
+}
+
+.why-statements-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-statement-item {
+  padding: clamp(40px, 8vh, 90px) 0;
+  border-top: 1px solid var(--border-subtle);
+  display: grid;
+  grid-template-columns: 140px 1.5fr 1fr;
+  gap: clamp(24px, 4vw, 60px);
+  align-items: center;
+  transition: background-color 0.4s ease;
+}
+
+.why-statement-item:hover {
+  background-color: rgba(139, 92, 246, 0.03);
+}
+
+.why-num {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  color: var(--accent-light);
+}
+
+.why-claim {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--text-white);
+  transition: color 0.3s ease;
+}
+
+.why-statement-item:hover .why-claim {
+  color: var(--accent-light);
+}
+
+.why-detail {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   SECTION 8: CLIENTS (MONOCHROME MARQUEE & INTERACTIVE WALL) — شريط وشبكة العملاء
+   ========================================================================== */
+.clients-section {
+  position: relative;
+  padding: var(--section-padding) 0;
+  overflow: hidden;
+}
+
+.clients-header {
+  margin-bottom: clamp(40px, 6vh, 80px);
+}
+
+.clients-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+
+/* صف الشعارات المتحرك — Marquee Row */
+.clients-marquee-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(10, 10, 15, 0.6);
+}
+
+.clients-marquee-track {
+  display: flex;
+  gap: clamp(40px, 6vw, 90px);
+  width: max-content;
+  animation: clientsMarquee 35s linear infinite;
+  align-items: center;
+}
+
+.marquee-logo-card {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.65;
+  filter: grayscale(100%) brightness(1.2);
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s var(--ease-out-expo);
+}
+
+.marquee-logo-card:hover {
+  opacity: 1;
+  filter: grayscale(0%) drop-shadow(0 0 16px var(--accent-purple-glow));
+  transform: scale(1.1);
+}
+
+.marquee-logo-img {
+  max-height: 52px;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+/* شبكة شعارات العملاء — Interactive Client Grid */
+.clients-interactive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: clamp(48px, 8vh, 80px);
+}
+
+.client-grid-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 180px;
+  transition: transform 0.4s var(--ease-out-expo), border-color 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.client-grid-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-active);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 24px var(--accent-purple-glow);
+}
+
+.client-grid-logo {
+  max-height: 48px;
+  max-width: 140px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  filter: brightness(1.1);
+  transition: transform 0.4s var(--ease-out-expo);
+}
+
+.client-grid-card:hover .client-grid-logo {
+  transform: scale(1.08);
+}
+
+.client-grid-name {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 4px;
+}
+
+.client-grid-ind {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   SECTION 9: CREATIVE STATEMENT (CINEMATIC KINETIC INTERLUDE) — العبارة الإبداعية الفاصلة بين الأقسام
+   ========================================================================== */
+.statement-section {
+  position: relative;
+  padding: clamp(100px, 16vh, 220px) 0;
+  background: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.18) 0%, rgba(6, 6, 8, 1) 75%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.statement-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statement-quote-large {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5.5vw, 5.25rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.statement-subquote {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.5vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   SECTION 10: CONTACT / CTA (LET'S CREATE WHAT'S NEXT) — التواصل ونموذج الاستفسار
+   ========================================================================== */
+.contact-section {
+  position: relative;
+  padding: var(--section-padding) 0;
+  background: linear-gradient(180deg, var(--bg-black) 0%, #110d1f 60%, #080512 100%);
+  border-top: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(40px, 8vw, 100px);
+}
+
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6.5vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.contact-philosophy {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 48px;
+}
+
+.contact-direct-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 32px;
+  backdrop-filter: blur(16px);
+  margin-top: auto;
+}
+
+.direct-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-light);
+  margin-bottom: 8px;
+}
+
+.direct-phone-link {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--text-white);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.direct-phone-link:hover {
+  color: var(--accent-light);
+  transform: translateX(4px);
+}
+
+.direct-subtext {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* حقول وأزرار نموذج الاستفسار — Interactive Project Planner Form */
+.contact-form-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  padding: clamp(32px, 5vw, 56px);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.form-block {
+  margin-bottom: 28px;
+}
+
+.form-block-label {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-white);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.service-toggle-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-toggle-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.service-toggle-btn:hover {
+  color: var(--text-white);
+  border-color: rgba(139, 92, 246, 0.5);
+}
+
+.service-toggle-btn.selected {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: var(--accent-purple);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(139, 92, 246, 0.3);
+}
+
+/* FIX: Form grid rows — used proper gap instead of margin-bottom on children,
+   which was causing double-spacing and overlapping inside the 2-column grid. */
+.form-inputs-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px; /* FIX: moved margin to the row wrapper for consistent spacing */
+}
+
+.input-field-group {
+  /* FIX: removed margin-bottom here — the parent .form-inputs-row gap and
+     margin-bottom handle all spacing. The old margin-bottom: 18px on each
+     child INSIDE a grid row caused fields to push into each other. */
+  margin-bottom: 0;
+}
+
+/* FIX: standalone input groups outside a .form-inputs-row (e.g. textarea) need their own spacing */
+.contact-form-wrap > form > .input-field-group {
+  margin-bottom: 18px;
+}
+
+.custom-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 16px 20px;
+  color: var(--text-white);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: var(--accent-purple);
+  background: rgba(139, 92, 246, 0.04);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+.custom-input::placeholder {
+  color: var(--text-dim);
+}
+
+textarea.custom-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit-btn {
+  width: 100%;
+  padding: 18px 32px;
+  font-size: 1rem;
+  /* FIX: add top margin so the submit button doesn't collide with the textarea above */
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   SECTION 11: FOOTER
+   ========================================================================== */
+.site-footer {
+  background-color: #030305;
+  border-top: 1px solid var(--border-subtle);
+  padding: clamp(60px, 10vh, 100px) 0 40px;
+  position: relative;
+}
+
+.footer-top-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: clamp(32px, 5vw, 64px);
+  margin-bottom: clamp(60px, 8vh, 90px);
+}
+
+.footer-brand-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: var(--text-white);
+  margin-bottom: 24px;
+}
+
+.footer-tagline {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  line-height: 1.6;
+}
+
+.footer-desc {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 360px;
+  margin-top: 12px;
+}
+
+.footer-col-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-dim);
+  margin-bottom: 24px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.footer-bottom-row {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.back-to-top-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  background: var(--accent-purple);
+  color: #ffffff;
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 18px var(--accent-purple-glow);
+  transform: translateY(-4px);
+}
+
+/* ==========================================================================
+   CUSTOM CURSOR — المؤشر المخصص
+   ========================================================================== */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.custom-cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  border: 1.5px solid rgba(192, 132, 252, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s var(--ease-out-expo), height 0.3s var(--ease-out-expo), background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* أشكال المؤشر حسب حالة التفاعل — Cursor States */
+body.cursor-view .custom-cursor-follower {
+  width: 88px;
+  height: 88px;
+  background-color: var(--accent-purple);
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 30px var(--accent-purple-glow);
+}
+
+body.cursor-drag .custom-cursor-follower {
+  width: 84px;
+  height: 84px;
+  background-color: rgba(124, 58, 237, 0.85);
+  border-color: var(--accent-light);
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.5);
+}
+
+body.cursor-hover .custom-cursor-follower {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+}
+
+body.cursor-view .custom-cursor,
+body.cursor-drag .custom-cursor {
+  opacity: 0;
+}
+
+/* تعطيل المؤشر المخصص على الشاشات اللمسية — Disable Custom Cursor on Touch */
+@media (hover: none) and (pointer: coarse) {
+
+  .custom-cursor,
+  .custom-cursor-follower {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS — تعديلات المقاسات للموبايل والتابلت
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .split-screen-container {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .split-seam {
+    display: none;
+  }
+
+  .service-item {
+    grid-template-columns: 80px 1.5fr;
+  }
+
+  .service-desc {
+    grid-column: 2 / 3;
+    max-width: 100%;
+  }
+
+  .why-statement-item {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .why-detail {
+    grid-column: 2 / 3;
+  }
+
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .nav-menu,
+  .nav-actions .btn-magnetic {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .about-editorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-subrow {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  /* FIX: stack form inputs vertically on tablets */
+  .form-inputs-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* FIX: scale down section headlines to avoid overflow on tablet */
+  .contact-headline {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .why-lead-title {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 84vw;
+  }
+
+  .service-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .service-desc {
+    grid-column: 1 / 2;
+  }
+
+  .why-statement-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .why-detail {
+    grid-column: 1 / 2;
+  }
+
+  .footer-top-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* FIX: ensure hero headline doesn't overflow on small phones */
+  .hero-headline {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+
+  /* FIX: tighten contact form padding on mobile */
+  .contact-form-wrap {
+    padding: clamp(20px, 5vw, 32px);
+  }
+
+  /* FIX: scale statement quote for mobile readability */
+  .statement-quote-large {
+    font-size: clamp(1.75rem, 7vw, 3rem);
+  }
+}

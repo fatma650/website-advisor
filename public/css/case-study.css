@@ -1,0 +1,435 @@
+/* ==========================================================================
+   ADVISOR AGENCY — FULL-SCREEN EDITORIAL CASE STUDY MODAL
+   Structure: Name, Industry, Service, Year, Challenge, Approach, Creative Direction, Result, Visuals
+   ========================================================================== */
+
+.case-study-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-black);
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(30px);
+}
+
+.case-study-overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* شريط التحكم الثابت داخل المشروع — Sticky Action Bar */
+.case-study-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  background-color: rgba(6, 6, 8, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(20px, 5vw, 60px);
+  z-index: 100;
+}
+
+.case-study-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.breadcrumb-cat {
+  color: var(--accent-light);
+}
+
+.case-study-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.case-nav-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-white);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.case-nav-btn:hover {
+  background: var(--accent-purple);
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 16px var(--accent-purple-glow);
+}
+
+.case-close-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.case-close-btn:hover {
+  background: #ef4444;
+  border-color: #ef4444;
+  transform: rotate(90deg);
+}
+
+/* عرض ومسافات محتوى المشروع — Case Study Content Wrapper */
+.case-study-content {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: clamp(40px, 8vh, 80px) clamp(20px, 5vw, 60px) 120px;
+}
+
+/* العنوان الرئيسي للمشروع — Hero Header */
+.case-hero {
+  margin-bottom: clamp(48px, 8vh, 80px);
+}
+
+.case-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.case-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 7vw, 6.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.case-subtitle {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  color: var(--accent-light);
+  line-height: 1.5;
+  max-width: 860px;
+  margin-bottom: 36px;
+}
+
+/* شبكة معلومات المشروع — Metadata Specs Grid */
+.case-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: clamp(48px, 8vh, 80px);
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.spec-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-dim);
+}
+
+.spec-value {
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+/* تنسيق الصورة الرئيسية — Master Board / Hero Image */
+.case-master-visual {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.7);
+  margin-bottom: clamp(60px, 10vh, 120px);
+  position: relative;
+  background: #0d0d14;
+}
+
+.case-master-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+/* تنسيق شرح التحدي والمنهج — Deep Dive Editorial Section */
+.case-narrative-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  margin-bottom: clamp(60px, 10vh, 120px);
+}
+
+.narrative-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: clamp(32px, 4vw, 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.narrative-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--accent-purple);
+  box-shadow: 0 0 12px var(--accent-purple);
+}
+
+.narrative-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.narrative-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  line-height: 1.15;
+}
+
+.narrative-text {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  white-space: pre-line;
+}
+
+/* تنسيق أرقام ونتائج الحملة — Key Results Metrics Row */
+.case-results-strip {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(16, 16, 23, 0.9) 100%);
+  border: 1px solid var(--border-active);
+  border-radius: 20px;
+  padding: clamp(32px, 5vw, 56px);
+  margin-bottom: clamp(60px, 10vh, 120px);
+}
+
+.results-heading {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.results-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.result-stat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.result-value {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ffffff 30%, var(--accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.result-label {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.result-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* شبكة صور الحملة ووصفها — Editorial Campaign Visuals Gallery */
+.case-gallery-section {
+  margin-bottom: clamp(60px, 10vh, 120px);
+}
+
+.gallery-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.case-editorial-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.gallery-visual-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.4s var(--ease-out-expo), border-color 0.4s ease;
+  position: relative;
+}
+
+.gallery-visual-item:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-active);
+}
+
+.gallery-img-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #0d0d14;
+  cursor: zoom-in;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.gallery-visual-item:hover .gallery-img {
+  transform: scale(1.04);
+}
+
+.gallery-caption {
+  padding: 18px 24px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* منطقة الانتقال إلى المشروع التالي — Next Project Bottom Navigation */
+.case-next-project {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: clamp(48px, 8vh, 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-label {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 8px;
+}
+
+.next-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--text-white);
+  transition: color 0.3s ease;
+}
+
+.case-next-project:hover .next-title {
+  color: var(--accent-light);
+}
+
+/* تكييف النافذة مع الشاشات الصغيرة — Responsive Modal Breakpoints */
+@media (max-width: 900px) {
+  .case-specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .case-narrative-grid {
+    grid-template-columns: 1fr;
+  }
+  .results-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .case-editorial-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-specs-grid {
+    grid-template-columns: 1fr;
+  }
+  .case-study-bar {
+    padding: 0 16px;
+  }
+  .case-study-breadcrumb span:not(.breadcrumb-cat) {
+    display: none;
+  }
+}

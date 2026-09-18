@@ -1,0 +1,190 @@
+/* ==========================================================================
+   ADVISOR AGENCY — ANIMATION STYLESHEET
+   Kinetic Typography, Mask Reveals, Marquees, Glowing Lines, Smooth Parallax
+   ========================================================================== */
+
+/* تعريف مراحل الحركة — Keyframe Animations */
+@keyframes tickerFlow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes clientsMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollPulse {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+  51% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+}
+
+@keyframes purplePulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(139, 92, 246, 0.6);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes shimmerText {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* كشف العناصر داخل أقنعة متحركة — Kinetic Mask Reveals */
+.mask-reveal {
+  overflow: hidden;
+  display: block;
+}
+
+.mask-reveal-inner {
+  display: block;
+  transform: translateY(105%);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease;
+  opacity: 0;
+}
+
+.mask-reveal.is-revealed .mask-reveal-inner {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/* توقيت ظهور سطور النص — Kinetic Typography Stagger delays */
+.delay-1 { transition-delay: 0.1s !important; }
+.delay-2 { transition-delay: 0.2s !important; }
+.delay-3 { transition-delay: 0.3s !important; }
+.delay-4 { transition-delay: 0.4s !important; }
+.delay-5 { transition-delay: 0.5s !important; }
+
+/* كشف الصورة تدريجياً — Image Clip Reveal */
+.img-reveal-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-reveal-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-black);
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 2;
+}
+
+.img-reveal-wrap.is-revealed::after {
+  transform: scaleY(0);
+}
+
+.img-reveal-wrap img {
+  transform: scale(1.15);
+  transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-reveal-wrap.is-revealed img {
+  transform: scale(1);
+}
+
+/* تأثير الحدود المضيئة — Glowing Border Accent */
+.glow-border-bottom {
+  position: relative;
+}
+
+.glow-border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-purple), transparent);
+  opacity: 0.7;
+}
+
+/* حركة جزيئات الإضاءة — Floating Particle Splash Effect */
+.ambient-particle-splash {
+  position: absolute;
+  pointer-events: none;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, rgba(124, 58, 237, 0.08) 45%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: floatGentle 8s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* لمعة النص المتحركة — Shimmer Accent Text */
+.text-shimmer {
+  background: linear-gradient(90deg, #ffffff 0%, var(--accent-light) 40%, #ffffff 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerText 5s linear infinite;
+}
+
+/* موجة الإضاءة داخل الزر — Magnetic Button Ripple */
+.btn-magnetic::before {
+  content: '';
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transform: translate(-50%, -50%) scale(0);
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-magnetic:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
