@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ADVISOR — إدارة المحتوى</title>
+  <link rel="icon" href="/assets/brand/advisor_monogram.png">
+  <link rel="stylesheet" href="/admin-assets/admin.css">
+  <script src="/admin-assets/admin.js" defer></script>
+</head>
+<body>
+  <!-- شريط ثابت للهوية واللغة والعودة للموقع؛ لا يظهر أي بيانات خاصة قبل فحص الجلسة. -->
+  <header class="topbar">
+    <a class="brand" href="/" target="_blank" rel="noopener"><img src="/assets/brand/advisor_monogram.png" alt=""><span>ADVISOR<small data-ar="إدارة المحتوى" data-en="Content studio">إدارة المحتوى</small></span></a>
+    <div class="top-actions"><button id="language" class="button quiet" type="button">English</button><a href="/" target="_blank" rel="noopener" class="button quiet" data-ar="عرض الموقع ↗" data-en="View site ↗">عرض الموقع ↗</a><button id="changePasswordBtn" type="button" class="button quiet" data-ar="تغيير الباسورد" data-en="Change password">تغيير الباسورد</button><button id="lockAdmin" type="button" class="button quiet" data-ar="قفل اللوحة" data-en="Lock admin">قفل اللوحة</button><a id="adminSignout" class="signout" href="/signout-with-chatgpt?return_to=%2F" target="_top" data-ar="خروج" data-en="Sign out">خروج</a></div>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar"><p class="eyebrow" data-ar="مساحة العمل" data-en="Workspace">مساحة العمل</p><nav aria-label="Content sections"><button id="sectionsTab" type="button" class="side-tab active" aria-current="page"><span data-ar="أقسام الموقع" data-en="Site sections">أقسام الموقع</span><span id="sectionCount">—</span></button><button id="projectsTab" type="button" class="side-tab"><span data-ar="المشاريع" data-en="Projects">المشاريع</span><span id="projectCount">—</span></button><button id="logosTab" type="button" class="side-tab"><span data-ar="شعارات العملاء" data-en="Client logos">شعارات العملاء</span><span id="logoCount">—</span></button><button id="trashTab" type="button" class="side-tab" style="margin-top:0.5rem;color:var(--text-muted);"><span data-ar="سلة المهملات" data-en="Trash Bin">سلة المهملات</span></button></nav><div class="account"><span class="eyebrow" data-ar="حساب الأدمن" data-en="Admin account">حساب الأدمن</span><span id="accountEmail" dir="ltr">…</span></div></aside>
+    <main id="main">
+      <section id="listView">
+        <div class="page-heading"><div><p class="eyebrow">ADVISOR / <span data-ar="المحتوى" data-en="CONTENT">المحتوى</span></p><h1 id="listTitle">أقسام الموقع</h1><p class="muted" id="listDescription"></p></div><button id="addItem" type="button" class="button primary" disabled hidden>+ إضافة مشروع</button></div>
+        <div id="loading" class="state" role="status" data-ar="جارٍ تحميل المحتوى…" data-en="Loading your content…">جارٍ تحميل المحتوى…</div>
+        <div id="loadError" class="state error" hidden><p id="loadErrorText"></p><button id="retry" class="button" type="button" data-ar="إعادة المحاولة" data-en="Try again">إعادة المحاولة</button><a id="signinLink" href="/signin-with-chatgpt?return_to=%2Fadmin" target="_top" hidden data-ar="تسجيل الدخول" data-en="Sign in">تسجيل الدخول</a></div>
+        <div id="items" class="items-grid"></div>
+      </section>
+      <!-- نموذج واحد للإضافة والتعديل؛ يتم نسخه من السجل حتى لا تتغير القائمة قبل الحفظ. -->
+      <section id="editorView" hidden>
+        <div class="editor-toolbar"><button id="back" class="button quiet" type="button" data-ar="→ رجوع" data-en="← Back">→ رجوع</button><div><h1 id="editorTitle"></h1><p id="saveStatus" class="muted" aria-live="polite"></p></div><div style="display:flex;gap:1rem;"><button id="deleteItemBtn" type="button" class="button danger" hidden data-ar="حذف" data-en="Delete" style="background:#e11d48;color:white;">حذف</button><button id="save" class="button primary" type="submit" form="editorForm" data-ar="حفظ التغييرات" data-en="Save changes">حفظ التغييرات</button></div></div>
+        <p class="editor-note" data-ar="التغييرات تظهر على الموقع بعد الحفظ. النص العربي اختياري؛ يظهر الإنجليزي عند تركه فارغاً." data-en="Saved changes appear on the site. Arabic is optional; English is used when it is empty.">التغييرات تظهر على الموقع بعد الحفظ. النص العربي اختياري؛ يظهر الإنجليزي عند تركه فارغاً.</p>
+        <div id="editorError" class="inline-error" role="alert" hidden></div>
+        <form id="editorForm"></form>
+      </section>
+      <section id="trashView" hidden>
+        <div class="page-heading"><div><p class="eyebrow">ADVISOR / <span data-ar="المهملات" data-en="TRASH">TRASH</span></p><h1 data-ar="سلة المهملات" data-en="Trash Bin">سلة المهملات</h1><p class="muted" data-ar="العناصر المحذوفة ستبقى هنا لمدة 30 يوماً قبل حذفها نهائياً." data-en="Deleted items remain here for 30 days before permanent deletion.">العناصر المحذوفة ستبقى هنا لمدة 30 يوماً قبل حذفها نهائياً.</p></div></div>
+        <div id="trashItems" class="items-grid"></div>
+      </section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="changePasswordModal" class="modal" style="border:none;border-radius:10px;padding:2rem;background:#101017;color:white;box-shadow:0 10px 30px rgba(0,0,0,0.5);width:90%;max-width:400px;">
+    <form id="changePasswordForm" style="display:flex;flex-direction:column;gap:1rem;">
+      <h2 id="cpTitle" style="margin:top:0;font-size:1.5rem;" data-ar="تغيير كلمة المرور" data-en="Change Password">تغيير كلمة المرور</h2>
+      <p id="cpError" class="inline-error" hidden></p>
+      <label class="field"><span id="cpOldLabel" data-ar="كلمة المرور الحالية" data-en="Current password">كلمة المرور الحالية</span><input id="cpOld" type="password" required dir="auto" autocomplete="current-password"></label>
+      <label class="field"><span id="cpNewLabel" data-ar="كلمة المرور الجديدة" data-en="New password">كلمة المرور الجديدة</span><input id="cpNew" type="password" required minlength="12" dir="auto" autocomplete="new-password"></label>
+      <div style="display:flex;gap:1rem;margin-top:1rem;justify-content:flex-end;">
+        <button id="cpCancel" type="button" class="button quiet" data-ar="إلغاء" data-en="Cancel">إلغاء</button>
+        <button id="cpSubmit" type="submit" class="button primary" data-ar="تغيير" data-en="Change">تغيير</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

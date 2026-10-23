@@ -1,0 +1,61 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/client",
+  "functions": {
+    "api/cms.js": {
+      "includeFiles": "{dist/server/**,server/seed.json,drizzle/*.sql}",
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/admin",
+      "destination": "/api/cms?advisor_route=/admin"
+    },
+    {
+      "source": "/admin/",
+      "destination": "/api/cms?advisor_route=/admin/"
+    },
+    {
+      "source": "/api/content",
+      "destination": "/api/cms?advisor_route=/api/content"
+    },
+    {
+      "source": "/api/admin/:path*",
+      "destination": "/api/cms?advisor_route=/api/admin/:path*"
+    },
+    {
+      "source": "/media/:path*",
+      "destination": "/api/cms?advisor_route=/media/:path*"
+    },
+    {
+      "source": "/signin-with-chatgpt",
+      "destination": "/api/cms?advisor_route=/signin-with-chatgpt"
+    },
+    {
+      "source": "/signout-with-chatgpt",
+      "destination": "/api/cms?advisor_route=/signout-with-chatgpt"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
