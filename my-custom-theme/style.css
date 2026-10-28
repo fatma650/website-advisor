@@ -1,0 +1,123 @@
+/*
+Theme Name: Advisor Custom Theme
+Theme URI: https://www.advisoregypt.com
+Author: Advisor
+Author URI: https://www.advisoregypt.com
+Description: Custom WordPress theme converted from the Advisor Agency HTML/CSS/JS site. Dynamic logo, menus, and content with SEO-ready title tags.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-custom-theme
+Tags: custom-logo, custom-menu, featured-images, one-column, translation-ready
+*/
+
+/* WordPress page / post layout — the marketing homepage uses css/main.css */
+.wp-document {
+  padding-top: calc(var(--nav-height, 84px) + 56px);
+  padding-bottom: var(--section-padding, 120px);
+  min-height: 70vh;
+}
+
+.wp-document .container {
+  max-width: var(--container-max, 1440px);
+  margin: 0 auto;
+  padding-left: clamp(20px, 5vw, 64px);
+  padding-right: clamp(20px, 5vw, 64px);
+}
+
+.wp-document-header {
+  margin-bottom: 40px;
+  max-width: 920px;
+}
+
+.wp-document-title {
+  font-family: var(--font-display, inherit);
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+}
+
+.wp-document-content {
+  max-width: 860px;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text-muted, #9ca3af);
+}
+
+.wp-document-content > * + * {
+  margin-top: 1.25em;
+}
+
+.wp-document-content h2,
+.wp-document-content h3,
+.wp-document-content h4 {
+  color: var(--text-white, #fff);
+  font-family: var(--font-display, inherit);
+  text-transform: uppercase;
+}
+
+.wp-document-content a {
+  color: var(--accent-light, #c084fc);
+}
+
+.wp-document-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wp-document-content ul,
+.wp-document-content ol {
+  padding-inline-start: 1.25em;
+}
+
+.wp-posts-list {
+  display: grid;
+  gap: 28px;
+}
+
+.wp-post-card {
+  display: block;
+  padding: 28px;
+  background: var(--bg-card, #101017);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  text-decoration: none;
+  color: inherit;
+}
+
+.wp-post-card h2 {
+  font-family: var(--font-display, inherit);
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.wp-alignnone,
+.wp-aligncenter,
+.wp-alignleft,
+.wp-alignright,
+.alignnone,
+.aligncenter,
+.alignleft,
+.alignright,
+.alignwide,
+.alignfull {
+  max-width: 100%;
+  height: auto;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
